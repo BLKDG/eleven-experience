@@ -247,7 +247,15 @@
     </div>
 
     {%- comment -%} Mobile video wrapper - only show if mobile video is provided or if desktop video is uploaded {%- endcomment -%}
-    {%- if mobile_video_upload != blank or (video_upload != blank and video_url == blank) -%}
+    {%- liquid
+      assign show_mobile_video = false
+      if mobile_video_upload != blank
+        assign show_mobile_video = true
+      elsif video_upload != blank and video_url == blank
+        assign show_mobile_video = true
+      endif
+    -%}
+    {%- if show_mobile_video -%}
       <div
         class="video--wrapper video--wrapper-mobile"
         {% if autoplay %}
@@ -276,4 +284,4 @@
     {%- endif -%}
 
   </{{ link_tag }}>
-</video--root>
+</video-component>
