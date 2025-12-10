@@ -57,6 +57,7 @@
       "blocks": {
         "blog_YYEmjK": {
           "type": "blog",
+          "disabled": true,
           "settings": {
             "menu-item": "Journal",
             "blog": "news",
@@ -69,6 +70,7 @@
         },
         "product_list_bH88BC": {
           "type": "product-list",
+          "disabled": true,
           "settings": {
             "menu-item": "New arrivals",
             "product-list": []
