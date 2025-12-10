@@ -83,7 +83,7 @@
         "id": "typography--heading",
         "label": "Heading font",
         "type": "font_picker",
-        "default": "karla_n7"
+        "default": "larken"
       },
       {
         "type": "range",
@@ -205,7 +205,7 @@
         "id": "typography--nav",
         "label": "Font",
         "type": "font_picker",
-        "default": "roboto_n4"
+        "default": "gotham"
       },
       {
         "type": "range",
@@ -301,7 +301,7 @@
         "id": "typography--paragraph",
         "label": "Font",
         "type": "font_picker",
-        "default": "roboto_n4"
+        "default": "gotham"
       },
       {
         "type": "range",
