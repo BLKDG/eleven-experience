@@ -1,0 +1,102 @@
+{
+  "type": "aside",
+  "name": "Overlay Group",
+  "sections": {
+    "popup": {
+      "type": "popup",
+      "blocks": {
+        "newsletter": {
+          "type": "newsletter",
+          "settings": {
+            "background-color": "dark",
+            "translucent": true,
+            "white-text": true,
+            "position": "right",
+            "text-alignment": "center",
+            "heading": "Sign up and save",
+            "description": "<p>Describe the benefits of the newsletter – dazzling discounts, sneak peeks, limited-edition treats, exclusive deals, fashion tips.</p>",
+            "social-title": "Follow us",
+            "social-enabled": true,
+            "delay": 11,
+            "show-at-bottom": true,
+            "days-range": 7,
+            "referrer-enabled": false,
+            "referrer-url": "",
+            "page-enabled": false,
+            "page-url": ""
+          }
+        },
+        "large-promotion": {
+          "type": "large-promotion",
+          "disabled": true,
+          "settings": {
+            "background-color": "dark",
+            "translucent": true,
+            "white-text": true,
+            "position": "left",
+            "text-alignment": "center",
+            "heading": "Up to 40% off",
+            "description": "",
+            "link-url": "/",
+            "link-text": "Shop the sale",
+            "delay": 15,
+            "show-at-bottom": true,
+            "days-range": 7,
+            "referrer-enabled": false,
+            "referrer-url": "",
+            "page-enabled": false,
+            "page-url": "",
+            "countdown-enabled": true,
+            "timer-bg-color": "dark",
+            "light-number": true,
+            "expiry-date": "DD-MM-YYYY",
+            "expiry-hours": 0,
+            "expiry-minutes": 0,
+            "hide-when-expired": true,
+            "show-button-when": "always"
+          }
+        },
+        "consent-tracking": {
+          "type": "consent-tracking",
+          "settings": {
+            "background-color": "dark",
+            "translucent": true,
+            "white-text": true,
+            "position": "left",
+            "text-alignment": "center",
+            "heading": "Cookie consent",
+            "description": "<p>We use cookies and similar technologies to provide the best experience on our website. Refer to our Privacy Policy for more information.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "newsletter",
+        "large-promotion",
+        "consent-tracking"
+      ],
+      "settings": {
+        "limit": true
+      }
+    },
+    "age-verification": {
+      "type": "age-verification",
+      "disabled": true,
+      "settings": {
+        "background-color": "dark",
+        "translucent": true,
+        "white-text": true,
+        "heading": "Confirm your age",
+        "description": "<p>Are you 18 years old or older?</p>",
+        "decline-text": "No I'm not",
+        "approve-text": "Yes I am",
+        "declined-heading": "Come back when you're older",
+        "declined-description": "<p>Sorry, the content of this store can't be seen by a younger audience. Come back when you're older.</p>",
+        "return-text": "Oops, I entered incorrectly"
+      }
+    }
+  },
+  "order": [
+    "popup",
+    "age-verification"
+  ]
+}

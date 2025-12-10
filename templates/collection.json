@@ -1,0 +1,192 @@
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "spacing-above": "x-large",
+        "spacing-below": "none",
+        "show-title": true,
+        "heading-type": "featured-heading",
+        "heading-alignment": "center",
+        "show-description": true,
+        "description-alignment": "with-title",
+        "white-text": false,
+        "show-image": false,
+        "use-image-fallback": true,
+        "image-display-type": "small",
+        "aspect-ratio": 36,
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 58,
+        "overlay-style": "darken-bottom",
+        "text-style": "text-shadow",
+        "parallax-enabled": false,
+        "mobile-spacing-above": "x-large",
+        "mobile-spacing-below": "none"
+      }
+    },
+    "collection-navigation": {
+      "type": "collection-navigation",
+      "settings": {
+        "spacing-above": "medium",
+        "spacing-below": "none",
+        "show-browse-button": true,
+        "show-sort-button": true,
+        "show-refine-button": true,
+        "show-layout-buttons": true,
+        "show-collections-list": true,
+        "custom-list-collections": "",
+        "show-sort-list": true,
+        "show-refine-list": true,
+        "swatches": "circle",
+        "show-search-link": true,
+        "mobile-spacing-above": "medium",
+        "mobile-spacing-below": "none"
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "promotion-1": {
+          "type": "promotion",
+          "settings": {
+            "position": 6,
+            "promo-width": "2",
+            "heading-type": "featured-heading",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "text-width": 500,
+            "overlay-style": "darken-bottom",
+            "text-style": "none",
+            "background-color": "none",
+            "text-background-color": "light",
+            "border-type": "none",
+            "parallax-enabled": false,
+            "white-text": false,
+            "overline": "Buy one t-shirt, get another at",
+            "title": "[50% off]",
+            "highlight-type": "italic",
+            "highlight-color": "light",
+            "highlight-text": "none",
+            "description": "<p>For a limited time only</p>",
+            "link-text": "",
+            "mobile-text-horizontal-alignment": "center",
+            "mobile-text-vertical-alignment": "center",
+            "mobile-hide-description": false,
+            "mobile-hide-border": false
+          }
+        },
+        "promotion-2": {
+          "type": "promotion",
+          "settings": {
+            "position": 15,
+            "promo-width": "full",
+            "heading-type": "featured-heading",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "text-width": 500,
+            "overlay-style": "darken-bottom",
+            "text-style": "none",
+            "background-color": "none",
+            "text-background-color": "light",
+            "border-type": "none",
+            "parallax-enabled": false,
+            "white-text": false,
+            "overline": "",
+            "title": "Adventured inspired",
+            "highlight-type": "italic",
+            "highlight-color": "light",
+            "highlight-text": "none",
+            "description": "<p>Everyday adventures in the wild and the city.</p>",
+            "link-text": "READ JOURNAL",
+            "mobile-text-horizontal-alignment": "center",
+            "mobile-text-vertical-alignment": "center",
+            "mobile-hide-description": false,
+            "mobile-hide-border": false
+          }
+        }
+      },
+      "block_order": [
+        "promotion-1",
+        "promotion-2"
+      ],
+      "settings": {
+        "spacing-above": "medium",
+        "spacing-below": "none",
+        "products-per-row--desktop": 3,
+        "products-per-row--mobile": "2",
+        "number-of-rows": 8,
+        "mobile-spacing-above": "medium",
+        "mobile-spacing-below": "none"
+      }
+    },
+    "recent-products": {
+      "type": "recent-products",
+      "settings": {
+        "border": "none",
+        "spacing-above": "x-large",
+        "spacing-below": "x-large",
+        "background-color": "none",
+        "white-text": false,
+        "heading-alignment": "center",
+        "heading": "Recently viewed",
+        "mobile-spacing-above": "x-large",
+        "mobile-spacing-below": "x-large"
+      }
+    },
+    "image-with-text": {
+      "type": "image-with-text",
+      "settings": {
+        "border": "none",
+        "spacing-above": "none",
+        "spacing-below": "none",
+        "container-width": "6",
+        "background-color": "none",
+        "shape-position": "none",
+        "shape-top-style": "moderate-wave",
+        "shape-top-color": "none",
+        "shape-bottom-style": "moderate-wave",
+        "shape-bottom-color": "none",
+        "white-text": true,
+        "heading-type": "featured-heading",
+        "text-position": "overlay",
+        "overlap": false,
+        "text-horizontal-alignment": "center",
+        "text-vertical-alignment": "center",
+        "text-width": 650,
+        "overlay-style": "darken-bottom",
+        "text-style": "eclipse-shadow",
+        "text-background-color": "transparent",
+        "image-display-type": "small",
+        "aspect-ratio": 24,
+        "parallax-enabled": false,
+        "overline": "Popup",
+        "title": "Visit our market store this Summer",
+        "highlight-type": "italic",
+        "highlight-color": "light",
+        "highlight-text": "none",
+        "description": "",
+        "link-url": "",
+        "button-style": "button-1",
+        "link-text": "",
+        "mobile-full-width": true,
+        "mobile-spacing-above": "none",
+        "mobile-spacing-below": "none",
+        "mobile-white-text": true,
+        "mobile-overlay": true,
+        "mobile-hide-description": false,
+        "mobile-button-style": "button-1",
+        "mobile-image-display-type": "small",
+        "mobile-aspect-ratio": 40,
+        "mobile-text-horizontal-alignment": "center",
+        "mobile-text-vertical-alignment": "center"
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "collection-navigation",
+    "main-collection",
+    "recent-products",
+    "image-with-text"
+  ]
+}

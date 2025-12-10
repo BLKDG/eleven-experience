@@ -1,0 +1,79 @@
+{%- liquid
+  assign previous_t = 'general.pagination.previous' | t
+  assign next_t = 'general.pagination.next' | t
+  assign first_t = 'general.pagination.first' | t
+  assign last_t = 'general.pagination.last' | t
+  assign of_t = 'general.pagination.of' | t
+
+  unless hash == nil
+    assign hash = '#' | append: hash
+  endunless
+
+  assign previous_tag = 'div'
+  if paginate.previous
+    assign previous_tag = 'a'
+  endif
+
+  assign next_tag = 'div'
+  if paginate.next
+    assign next_tag = 'a'
+  endif
+-%}
+
+<div class="pagination--root" data-item="nav-text">
+  <{{ previous_tag }}
+    class="pagination--link"
+    {% if paginate.previous %}
+      href="{{ paginate.parts.first.url }}{{ hash }}"
+      role="button"
+      aria-label="{{ first_t }}"
+    {% else %}
+      aria-hidden="true"
+    {% endif %}
+  >
+    {%- render 'icons', icon: 'chevron-far-left' -%}
+  </{{ previous_tag }}>
+
+  <{{ previous_tag }}
+    class="pagination--link"
+    {% if paginate.previous %}
+      href="{{ paginate.previous.url }}{{ hash }}"
+      role="button"
+      aria-label="{{ previous_t }}"
+    {% else %}
+      aria-hidden="true"
+    {% endif %}
+  >
+    {%- render 'icons', icon: 'chevron-left' -%}
+  </{{ previous_tag }}>
+
+  <div class="pagination--of">
+    {{- paginate.current_page }} {{ of_t }} {{ paginate.pages -}}
+  </div>
+
+  <{{ next_tag }}
+    class="pagination--link"
+    {% if paginate.next %}
+      href="{{ paginate.next.url }}{{ hash }}"
+      role="button"
+      aria-label="{{ next_t }}"
+    {% else %}
+      aria-hidden="true"
+    {% endif %}
+  >
+    {%- render 'icons', icon: 'chevron-right' -%}
+  </{{ next_tag }}>
+
+  <{{ next_tag }}
+    class="pagination--link"
+    {% if paginate.next %}
+      href="{{ paginate.parts.last.url }}{{ hash }}"
+      role="button"
+      aria-label="{{ last_t }}"
+    {% else %}
+      aria-hidden="true"
+    {% endif %}
+  >
+    {%-  render 'icons', icon: 'chevron-far-right' -%}
+  </{{ next_tag }}>
+</div>

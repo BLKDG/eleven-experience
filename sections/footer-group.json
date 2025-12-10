@@ -1,0 +1,107 @@
+{
+  "type": "footer",
+  "name": "Footer Group",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "bcd2b65d-bf96-4a94-8f74-fc0727294d20": {
+          "type": "about",
+          "settings": {
+            "about-title": "About the store",
+            "text": "<p>[current_year] © Elements Theme by Troop for Shopify.<br/><br/>Big thanks to The Level Collective for the products and imagery featured in the this demo. You can purchase items showcased in this demo store at their <a href=\"https://thelevelcollective.com/\" target=\"_blank\" title=\"https://thelevelcollective.com/\">official store</a>.</p>"
+          }
+        },
+        "menu_YmEDtB": {
+          "type": "menu",
+          "settings": {
+            "menu-title": "Quick links",
+            "menu": "footer-main",
+            "show-policy-links": true
+          }
+        },
+        "46662d21-c8c2-4fb8-b905-9a142ac2f93a": {
+          "type": "menu",
+          "settings": {
+            "menu-title": "Info",
+            "menu": "footer",
+            "show-policy-links": true
+          }
+        },
+        "6600483d-1ee5-478c-a10a-911429f07f07": {
+          "type": "subscribe",
+          "settings": {
+            "background-color": "accent-3",
+            "white-text": true,
+            "heading-type": "section-heading",
+            "image-enabled": true,
+            "image-height": 170,
+            "heading": "Newsletter",
+            "description": "<p>Be the first to receive updates on new arrivals, special promos and sales.</p>",
+            "newsletter-enabled": true,
+            "show-social-icons": true
+          }
+        }
+      },
+      "block_order": [
+        "bcd2b65d-bf96-4a94-8f74-fc0727294d20",
+        "menu_YmEDtB",
+        "46662d21-c8c2-4fb8-b905-9a142ac2f93a",
+        "6600483d-1ee5-478c-a10a-911429f07f07"
+      ],
+      "settings": {
+        "border": "none",
+        "spacing-above": "large",
+        "spacing-below": "medium",
+        "background-color": "accent-1",
+        "heading-type": "block-heading",
+        "white-text": true,
+        "logo-enabled": true,
+        "logo-width": 300,
+        "enable-follow-on-shop": true,
+        "mobile-spacing-above": "medium",
+        "mobile-spacing-below": "medium"
+      }
+    },
+    "footer-bar": {
+      "type": "footer-bar",
+      "blocks": {
+        "localization": {
+          "type": "localization",
+          "settings": {
+            "show-region-selector": true,
+            "show-locale-selector": true
+          }
+        },
+        "powered-by": {
+          "type": "powered-by",
+          "settings": {}
+        },
+        "payment-icons": {
+          "type": "payment-icons",
+          "settings": {
+            "greyscale-enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "localization",
+        "powered-by",
+        "payment-icons"
+      ],
+      "settings": {
+        "border": "none",
+        "spacing-above": "medium",
+        "spacing-below": "medium",
+        "background-color": "accent-1",
+        "white-text": true,
+        "mobile-spacing-above": "medium",
+        "mobile-spacing-below": "medium"
+      }
+    }
+  },
+  "order": [
+    "footer",
+    "footer-bar"
+  ]
+}
