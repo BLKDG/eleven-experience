@@ -18,7 +18,7 @@
           "type": "menu",
           "settings": {
             "menu-title": "Get In Touch",
-            "menu": "",
+            "menu": "footer-contact-menu",
             "show-policy-links": true
           }
         },
