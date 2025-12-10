@@ -64,7 +64,7 @@
         "products-per-row--mobile": "2",
         "number-of-rows": 8,
         "mobile-spacing-above": "medium",
-        "mobile-spacing-below": "none"
+        "mobile-spacing-below": "medium"
       }
     }
   },
