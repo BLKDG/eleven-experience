@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "type": "footer",
   "name": "Footer Group",
@@ -9,14 +18,14 @@
           "type": "about",
           "settings": {
             "about-title": "About the store",
-            "text": "<p>[current_year] © Elements Theme by Troop for Shopify.<br/><br/>Big thanks to The Level Collective for the products and imagery featured in the this demo. You can purchase items showcased in this demo store at their <a href=\"https://thelevelcollective.com/\" target=\"_blank\" title=\"https://thelevelcollective.com/\">official store</a>.</p>"
+            "text": "<p>©[current_year] Irwin Backcountry Guides, LLC. All Rights Reserved. 330 Belleview Ave, Crested Butte, CO 81224</p>"
           }
         },
         "menu_YmEDtB": {
           "type": "menu",
           "settings": {
             "menu-title": "Quick links",
-            "menu": "footer-main",
+            "menu": "",
             "show-policy-links": true
           }
         },
@@ -53,10 +62,11 @@
         "border": "none",
         "spacing-above": "large",
         "spacing-below": "medium",
-        "background-color": "accent-1",
+        "background-color": "accent-2",
         "heading-type": "block-heading",
         "white-text": true,
         "logo-enabled": true,
+        "logo": "shopify://shop_images/logo-white.svg",
         "logo-width": 300,
         "enable-follow-on-shop": true,
         "mobile-spacing-above": "medium",
