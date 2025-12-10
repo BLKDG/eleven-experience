@@ -153,6 +153,63 @@
         "products-per-row--mobile": "1"
       }
     },
+    "shop_the_look_3zkyth": {
+      "type": "shop-the-look",
+      "blocks": {
+        "hotspot_hiWFwQ": {
+          "type": "hotspot",
+          "settings": {
+            "product": "test-product-3",
+            "horizontal": 35,
+            "vertical": 33,
+            "mobile-horizontal": 35,
+            "mobile-vertical": 35
+          }
+        },
+        "hotspot_C8cib6": {
+          "type": "hotspot",
+          "settings": {
+            "product": "test-product-1",
+            "horizontal": 65,
+            "vertical": 50,
+            "mobile-horizontal": 65,
+            "mobile-vertical": 47
+          }
+        },
+        "hotspot_jpiKbb": {
+          "type": "hotspot",
+          "settings": {
+            "product": "test-product-2",
+            "horizontal": 44,
+            "vertical": 62,
+            "mobile-horizontal": 45,
+            "mobile-vertical": 66
+          }
+        }
+      },
+      "block_order": [
+        "hotspot_hiWFwQ",
+        "hotspot_C8cib6",
+        "hotspot_jpiKbb"
+      ],
+      "name": "Shop the look",
+      "settings": {
+        "border": "none",
+        "spacing-above": "medium",
+        "spacing-below": "small",
+        "background-color": "accent-1",
+        "white-text": true,
+        "container-width": "2",
+        "hotspot-color": "white",
+        "heading": "Shop the look",
+        "heading-alignment": "center",
+        "image": "shopify://shop_images/Eleven_Deplar_Farm_Upton_2-6.jpg",
+        "button-style": "button-1",
+        "button-text": "Add all to cart",
+        "mobile-spacing-above": "medium",
+        "mobile-spacing-below": "medium"
+      }
+    },
     "main-collection": {
       "type": "main-collection",
       "disabled": true,
@@ -222,6 +279,7 @@
     "featured_collections_cygXiQ",
     "overlapping_media_EXL7yg",
     "featured_collection_4kDgr7",
+    "shop_the_look_3zkyth",
     "main-collection",
     "collection_with_highlight_PDpLUE"
   ]
