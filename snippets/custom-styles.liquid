@@ -35,4 +35,11 @@
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font--heading--family) !important;
   }
+
+  /* Mobile video aspect ratio override */
+  @media only screen and (max-width: 767px) {
+    .video--wrapper-mobile {
+      --natural-aspect-ratio: var(--natural-mobile-aspect-ratio, 0.775);
+    }
+  }
 </style>
