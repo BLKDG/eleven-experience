@@ -1,5 +1,60 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
+    "featured_video_hF9aT4": {
+      "type": "featured-video",
+      "name": "Video",
+      "settings": {
+        "border": "none",
+        "spacing-above": "none",
+        "spacing-below": "none",
+        "container-width": "6",
+        "background-color": "none",
+        "shape-position": "none",
+        "shape-top-style": "moderate-wave",
+        "shape-top-color": "none",
+        "shape-bottom-style": "diagonal",
+        "shape-bottom-color": "none",
+        "white-text": true,
+        "text-width": 400,
+        "text-horizontal-alignment": "center",
+        "text-vertical-alignment": "center",
+        "overlay-style": "darken-bottom",
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "heading-type": "featured-heading",
+        "autoplay": true,
+        "video-display-type": "aspect-ratio",
+        "aspect-ratio": 46,
+        "play-button-style": "solid",
+        "video-upload": "shopify://files/videos/Eleven_Brand_2025_h264.mp4",
+        "overline": "",
+        "heading": "",
+        "highlight-type": "italic",
+        "highlight-color": "accent-2",
+        "highlight-text": "none",
+        "description": "",
+        "button-url": "",
+        "button-style": "button-2",
+        "button-text": "",
+        "mobile-spacing-above": "none",
+        "mobile-spacing-below": "none",
+        "mobile-full-width": true,
+        "mobile-video-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "mobile-text-horizontal-alignment": "center",
+        "mobile-text-vertical-alignment": "center",
+        "mobile-hide-description": false
+      }
+    },
     "main-collection": {
       "type": "main-collection",
       "settings": {
@@ -14,6 +69,7 @@
     }
   },
   "order": [
+    "featured_video_hF9aT4",
     "main-collection"
   ]
 }
