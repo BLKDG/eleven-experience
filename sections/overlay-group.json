@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "type": "aside",
   "name": "Overlay Group",
@@ -13,10 +22,10 @@
             "white-text": true,
             "position": "right",
             "text-alignment": "center",
+            "social-enabled": true,
             "heading": "Sign up and save",
             "description": "<p>Describe the benefits of the newsletter – dazzling discounts, sneak peeks, limited-edition treats, exclusive deals, fashion tips.</p>",
             "social-title": "Follow us",
-            "social-enabled": true,
             "delay": 11,
             "show-at-bottom": true,
             "days-range": 7,
@@ -38,6 +47,7 @@
             "heading": "Up to 40% off",
             "description": "",
             "link-url": "/",
+            "button-style": "button-2",
             "link-text": "Shop the sale",
             "delay": 15,
             "show-at-bottom": true,
@@ -64,6 +74,8 @@
             "white-text": true,
             "position": "left",
             "text-alignment": "center",
+            "accept-button-style": "button-2",
+            "decline-button-style": "button-4",
             "heading": "Cookie consent",
             "description": "<p>We use cookies and similar technologies to provide the best experience on our website. Refer to our Privacy Policy for more information.</p>"
           }
@@ -74,29 +86,13 @@
         "large-promotion",
         "consent-tracking"
       ],
-      "settings": {
-        "limit": true
-      }
-    },
-    "age-verification": {
-      "type": "age-verification",
       "disabled": true,
       "settings": {
-        "background-color": "dark",
-        "translucent": true,
-        "white-text": true,
-        "heading": "Confirm your age",
-        "description": "<p>Are you 18 years old or older?</p>",
-        "decline-text": "No I'm not",
-        "approve-text": "Yes I am",
-        "declined-heading": "Come back when you're older",
-        "declined-description": "<p>Sorry, the content of this store can't be seen by a younger audience. Come back when you're older.</p>",
-        "return-text": "Oops, I entered incorrectly"
+        "limit": true
       }
     }
   },
   "order": [
-    "popup",
-    "age-verification"
+    "popup"
   ]
 }
