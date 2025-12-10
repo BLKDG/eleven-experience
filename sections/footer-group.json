@@ -14,17 +14,10 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "bcd2b65d-bf96-4a94-8f74-fc0727294d20": {
-          "type": "about",
-          "settings": {
-            "about-title": "About the store",
-            "text": "<p>©[current_year] Irwin Backcountry Guides, LLC. All Rights Reserved. 330 Belleview Ave, Crested Butte, CO 81224</p>"
-          }
-        },
         "menu_YmEDtB": {
           "type": "menu",
           "settings": {
-            "menu-title": "Quick links",
+            "menu-title": "Get In Touch",
             "menu": "",
             "show-policy-links": true
           }
@@ -32,9 +25,9 @@
         "46662d21-c8c2-4fb8-b905-9a142ac2f93a": {
           "type": "menu",
           "settings": {
-            "menu-title": "Info",
+            "menu-title": "About",
             "menu": "footer",
-            "show-policy-links": true
+            "show-policy-links": false
           }
         },
         "6600483d-1ee5-478c-a10a-911429f07f07": {
@@ -53,7 +46,6 @@
         }
       },
       "block_order": [
-        "bcd2b65d-bf96-4a94-8f74-fc0727294d20",
         "menu_YmEDtB",
         "46662d21-c8c2-4fb8-b905-9a142ac2f93a",
         "6600483d-1ee5-478c-a10a-911429f07f07"
@@ -76,16 +68,18 @@
     "footer-bar": {
       "type": "footer-bar",
       "blocks": {
+        "text_GyY9ad": {
+          "type": "text",
+          "settings": {
+            "text": "©[current_year]  Irwin Backcountry Guides, LLC. All Rights Reserved. 330 Belleview Ave, Crested Butte, CO 81224"
+          }
+        },
         "localization": {
           "type": "localization",
           "settings": {
             "show-region-selector": true,
             "show-locale-selector": true
           }
-        },
-        "powered-by": {
-          "type": "powered-by",
-          "settings": {}
         },
         "payment-icons": {
           "type": "payment-icons",
@@ -95,15 +89,15 @@
         }
       },
       "block_order": [
+        "text_GyY9ad",
         "localization",
-        "powered-by",
         "payment-icons"
       ],
       "settings": {
         "border": "none",
         "spacing-above": "medium",
         "spacing-below": "medium",
-        "background-color": "accent-1",
+        "background-color": "accent-2",
         "white-text": true,
         "mobile-spacing-above": "medium",
         "mobile-spacing-below": "medium"
