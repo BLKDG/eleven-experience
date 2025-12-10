@@ -80,7 +80,7 @@
             "facebook-enabled": true,
             "x-enabled": true,
             "pinterest-enabled": true,
-            "email-enabled": true,
+            "email-enabled": false,
             "url-enabled": true
           }
         }
