@@ -138,7 +138,7 @@
         "section-alignment": "center",
         "display-type": "slideshow",
         "products-per-row--desktop": "3",
-        "collection": "",
+        "collection": "frontpage",
         "max-blocks": 6,
         "heading": "Collection name",
         "button-style": "button-1",
