@@ -70,8 +70,12 @@
         "width": 3,
         "heading": "Featured Collections",
         "heading-alignment": "center",
-        "collection-list": [],
-        "image-type": "product",
+        "collection-list": [
+          "frontpage",
+          "test-collection-1",
+          "test-collection-2"
+        ],
+        "image-type": "collection",
         "mobile-spacing-above": "medium",
         "mobile-spacing-below": "medium",
         "mobile-heading-alignment": "left",
@@ -140,7 +144,7 @@
         "products-per-row--desktop": "3",
         "collection": "frontpage",
         "max-blocks": 6,
-        "heading": "Collection name",
+        "heading": "Featured Products",
         "button-style": "button-1",
         "link-text": "View collection",
         "mobile-spacing-above": "medium",
@@ -161,6 +165,56 @@
         "mobile-spacing-above": "medium",
         "mobile-spacing-below": "medium"
       }
+    },
+    "collection_with_highlight_PDpLUE": {
+      "type": "collection-with-highlight",
+      "name": "Collection with highlight",
+      "settings": {
+        "border": "none",
+        "spacing-above": "large",
+        "spacing-below": "large",
+        "background-color": "none",
+        "container-width": "5",
+        "product-white-text": false,
+        "max-products": 8,
+        "products-per-row--desktop": "2",
+        "vertical-alignment": "top",
+        "reverse-layout": false,
+        "white-text": true,
+        "heading-type": "section-heading",
+        "text-horizontal-alignment": "center",
+        "text-vertical-alignment": "center",
+        "text-width": 400,
+        "overlay-style": "darken-bottom",
+        "text-style": "none",
+        "image-disabled": false,
+        "image-display-type": "medium",
+        "aspect-ratio": 56,
+        "collection": "frontpage",
+        "product-list": [
+          "test-product-1",
+          "test-product-2"
+        ],
+        "image": "shopify://shop_images/IcelandScenery-3.jpg",
+        "overline": "Overline text",
+        "heading": "Collection with highlight",
+        "highlight-type": "italic",
+        "highlight-color": "accent-2",
+        "highlight-text": "none",
+        "description": "<p>Share something about a limited offer or temporary promotion.</p>",
+        "link-url": "/",
+        "button-style": "button-2",
+        "link-text": "Optional link",
+        "mobile-spacing-above": "medium",
+        "mobile-spacing-below": "medium",
+        "mobile-media-layout": "slideshow",
+        "products-per-row--mobile": "2",
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "mobile-hide-description": false,
+        "mobile-text-horizontal-alignment": "center",
+        "mobile-text-vertical-alignment": "center"
+      }
     }
   },
   "order": [
@@ -168,6 +222,7 @@
     "featured_collections_cygXiQ",
     "overlapping_media_EXL7yg",
     "featured_collection_4kDgr7",
-    "main-collection"
+    "main-collection",
+    "collection_with_highlight_PDpLUE"
   ]
 }
