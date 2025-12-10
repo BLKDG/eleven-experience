@@ -17,9 +17,9 @@
         "menu_YmEDtB": {
           "type": "menu",
           "settings": {
-            "menu-title": "Get In Touch",
+            "menu-title": "Contact us",
             "menu": "footer-contact-menu",
-            "show-policy-links": true
+            "show-policy-links": false
           }
         },
         "46662d21-c8c2-4fb8-b905-9a142ac2f93a": {
@@ -30,8 +30,17 @@
             "show-policy-links": false
           }
         },
+        "menu_bPNqNA": {
+          "type": "menu",
+          "settings": {
+            "menu-title": "Quick links",
+            "menu": "customer-account-main-menu",
+            "show-policy-links": true
+          }
+        },
         "6600483d-1ee5-478c-a10a-911429f07f07": {
           "type": "subscribe",
+          "disabled": true,
           "settings": {
             "background-color": "accent-3",
             "white-text": true,
@@ -48,18 +57,19 @@
       "block_order": [
         "menu_YmEDtB",
         "46662d21-c8c2-4fb8-b905-9a142ac2f93a",
+        "menu_bPNqNA",
         "6600483d-1ee5-478c-a10a-911429f07f07"
       ],
       "settings": {
         "border": "none",
-        "spacing-above": "large",
+        "spacing-above": "small",
         "spacing-below": "medium",
         "background-color": "accent-2",
         "heading-type": "block-heading",
         "white-text": true,
         "logo-enabled": true,
-        "logo": "shopify://shop_images/logo-white.svg",
-        "logo-width": 300,
+        "logo": "shopify://shop_images/logo-white_ba14449c-1d97-44c6-a65e-ab148b66ae64.svg",
+        "logo-width": 200,
         "enable-follow-on-shop": true,
         "mobile-spacing-above": "medium",
         "mobile-spacing-below": "medium"
@@ -95,12 +105,12 @@
       ],
       "settings": {
         "border": "none",
-        "spacing-above": "medium",
-        "spacing-below": "medium",
+        "spacing-above": "small",
+        "spacing-below": "small",
         "background-color": "accent-2",
         "white-text": true,
-        "mobile-spacing-above": "medium",
-        "mobile-spacing-below": "medium"
+        "mobile-spacing-above": "small",
+        "mobile-spacing-below": "small"
       }
     }
   },
