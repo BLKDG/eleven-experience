@@ -55,16 +55,26 @@
         "mobile-hide-description": false
       }
     },
-    "main-collection": {
-      "type": "main-collection",
+    "featured-collection": {
+      "type": "featured-collection",
       "settings": {
+        "border": "none",
         "spacing-above": "medium",
         "spacing-below": "none",
-        "products-per-row--desktop": 3,
-        "products-per-row--mobile": "2",
-        "number-of-rows": 8,
+        "background-color": "none",
+        "white-text": false,
+        "section-alignment": "center",
+        "display-type": "grid",
+        "products-per-row--desktop": "3",
+        "collection": "all",
+        "max-blocks": 24,
+        "heading": "",
+        "button-style": "button-1",
+        "link-text": "",
         "mobile-spacing-above": "medium",
-        "mobile-spacing-below": "none"
+        "mobile-spacing-below": "none",
+        "mobile-heading-alignment": "left",
+        "products-per-row--mobile": "2"
       }
     }
   },
