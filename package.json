@@ -1,0 +1,41 @@
+{
+  "name": "eleven-experience",
+  "version": "1.0.0",
+  "description": "Eleven Experience Shopify theme",
+  "main": "index.js",
+  "scripts": {
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "dev": "npm run development",
+    "development": "concurrently \"mix watch\" \"shopify theme dev --store eleven-experience.myshopify.com\"",
+    "shopify:dev": "shopify theme dev --store eleven-experience.myshopify.com",
+    "prod": "npm run production",
+    "production": "concurrently \"mix watch\" \"shopify theme dev --store eleven-experience.myshopify.com -e prod\"",
+    "build": "mix --production",
+    "deploy": "shopify theme push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BLKDG/eleven-experience.git"
+  },
+  "keywords": [
+    "shopify",
+    "theme",
+    "liquid"
+  ],
+  "author": "BLKDG",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BLKDG/eleven-experience/issues"
+  },
+  "homepage": "https://github.com/BLKDG/eleven-experience#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "laravel-mix": "^6.0.49",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.69.5",
+    "sass-loader": "^12.1.0"
+  }
+}
+
