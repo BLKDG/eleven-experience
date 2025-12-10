@@ -83,7 +83,8 @@
     text_y_alignment: section.settings.text-vertical-alignment,
     thumbnail: section.settings.image,
     video_upload: section.settings.video-upload,
-    video_url: section.settings.video-url
+    video_url: section.settings.video-url,
+    mobile_video_upload: section.settings.mobile-video-upload
   -%}
 
   {%- if shape_position == 'bottom' or shape_position == 'both' -%}
@@ -829,6 +830,12 @@
         "type": "image_picker",
         "id": "mobile-thumbnail",
         "label": "Mobile thumbnail (optional)"
+      },
+      {
+        "type": "video",
+        "id": "mobile-video-upload",
+        "label": "Mobile video upload (optional)",
+        "info": "Upload a separate video optimized for mobile devices. If not provided, the desktop video will be used on mobile."
       },
       {
         "id" :"mobile-video-display-type",

@@ -30,6 +30,11 @@
     assign natural_aspect_ratio = video_upload.aspect_ratio
   endif
 
+  assign mobile_natural_aspect_ratio = natural_aspect_ratio
+  if mobile_video_upload != blank
+    assign mobile_natural_aspect_ratio = mobile_video_upload.aspect_ratio
+  endif
+
   assign aspect_ratio = aspect_ratio | default: natural_aspect_ratio
   assign mobile_aspect_ratio = mobile_aspect_ratio | default: aspect_ratio
   assign full_width = full_width | default: false
@@ -216,14 +221,18 @@
       </div>
     {%- endif -%}
 
+    {%- comment -%} Desktop video wrapper - hide on mobile if mobile video is provided {%- endcomment -%}
     <div
-      class="video--wrapper"
+      class="video--wrapper video--wrapper-desktop"
       {% if autoplay %}
         tabindex="-1"
       {% else %}
         data-transition-item="viewport"
         data-transition-type="fade-in"
         data-transition-trigger="custom"
+      {% endif %}
+      {% if mobile_video_upload != blank %}
+        data-mq="medium-large"
       {% endif %}
     >
       {%- if video_upload -%}
@@ -236,6 +245,35 @@
         <div id="{{ id }}-player"></div>
       {%- endif -%}
     </div>
+
+    {%- comment -%} Mobile video wrapper - only show if mobile video is provided or if desktop video is uploaded {%- endcomment -%}
+    {%- if mobile_video_upload != blank or (video_upload != blank and video_url == blank) -%}
+      <div
+        class="video--wrapper video--wrapper-mobile"
+        {% if autoplay %}
+          tabindex="-1"
+        {% else %}
+          data-transition-item="viewport"
+          data-transition-type="fade-in"
+          data-transition-trigger="custom"
+        {% endif %}
+        data-mq="none"
+      >
+        {%- if mobile_video_upload != blank -%}
+          {%- liquid
+            assign mobile_video = mobile_video_upload | video_tag: autoplay: autoplay, muted: autoplay, loop: autoplay
+            assign mobile_video = mobile_video | replace: '<img', '<img loading="lazy"'
+            echo mobile_video
+          -%}
+        {%- elsif video_upload != blank -%}
+          {%- liquid
+            assign video = video_upload | video_tag: autoplay: autoplay, muted: autoplay, loop: autoplay
+            assign video = video | replace: '<img', '<img loading="lazy"'
+            echo video
+          -%}
+        {%- endif -%}
+      </div>
+    {%- endif -%}
 
   </{{ link_tag }}>
 </video--root>
