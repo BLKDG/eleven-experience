@@ -33,7 +33,7 @@
         "heading-type": "featured-heading",
         "autoplay": true,
         "video-display-type": "aspect-ratio",
-        "aspect-ratio": 46,
+        "aspect-ratio": 44,
         "play-button-style": "solid",
         "video-upload": "shopify://files/videos/Eleven_Brand_2025_h264.mp4",
         "video-url": "",
@@ -57,26 +57,16 @@
         "mobile-hide-description": false
       }
     },
-    "featured-collection": {
-      "type": "featured-collection",
+    "main-collection": {
+      "type": "main-collection",
       "settings": {
-        "border": "none",
         "spacing-above": "medium",
         "spacing-below": "none",
-        "background-color": "none",
-        "white-text": false,
-        "section-alignment": "center",
-        "display-type": "grid",
-        "products-per-row--desktop": "3",
-        "collection": "all",
-        "max-blocks": 24,
-        "heading": "",
-        "button-style": "button-1",
-        "link-text": "",
+        "products-per-row--desktop": 3,
+        "products-per-row--mobile": "2",
+        "number-of-rows": 8,
         "mobile-spacing-above": "medium",
-        "mobile-spacing-below": "medium",
-        "mobile-heading-alignment": "left",
-        "products-per-row--mobile": "2"
+        "mobile-spacing-below": "medium"
       }
     }
   },
