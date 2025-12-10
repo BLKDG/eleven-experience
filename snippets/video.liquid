@@ -30,7 +30,7 @@
     assign natural_aspect_ratio = video_upload.aspect_ratio
   endif
 
-  assign mobile_natural_aspect_ratio = natural_aspect_ratio
+  assign mobile_natural_aspect_ratio = '0.775'
   if mobile_video_upload != blank
     assign mobile_natural_aspect_ratio = mobile_video_upload.aspect_ratio
   endif
@@ -49,6 +49,7 @@
     echo '--video-aspect-ratio:' | append: aspect_ratio | append: ';'
     echo '--video-mobile-aspect-ratio:' | append: mobile_aspect_ratio | append: ';'
     echo '--natural-aspect-ratio:' | append: natural_aspect_ratio | append: ';'
+    echo '--natural-mobile-aspect-ratio:' | append: mobile_natural_aspect_ratio | append: ';'
   endcapture
 -%}
 
@@ -265,7 +266,7 @@
           data-transition-type="fade-in"
           data-transition-trigger="custom"
         {% endif %}
-        data-mq="none"
+        data-mq="small"
       >
         {%- if mobile_video_upload != blank -%}
           {%- liquid
