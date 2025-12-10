@@ -57,6 +57,75 @@
         "mobile-hide-description": false
       }
     },
+    "featured_collections_cygXiQ": {
+      "type": "featured-collections",
+      "name": "Collections list",
+      "settings": {
+        "border": "none",
+        "spacing-above": "large",
+        "spacing-below": "large",
+        "background-color": "none",
+        "white-text": false,
+        "display-type": "slideshow",
+        "width": 3,
+        "heading": "Featured Collections",
+        "heading-alignment": "center",
+        "collection-list": [],
+        "image-type": "product",
+        "mobile-spacing-above": "medium",
+        "mobile-spacing-below": "medium",
+        "mobile-heading-alignment": "left",
+        "mobile-width": "2"
+      }
+    },
+    "overlapping_media_EXL7yg": {
+      "type": "overlapping-media",
+      "blocks": {
+        "image_bUfLz6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IcelandScenery-7405.jpg"
+          }
+        },
+        "image_KJxi8N": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IcelandScenery.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_bUfLz6",
+        "image_KJxi8N"
+      ],
+      "name": "Overlapping media",
+      "settings": {
+        "border": "none",
+        "spacing-above": "large",
+        "spacing-below": "large",
+        "background-color": "none",
+        "container-width": "4",
+        "reverse-layout": false,
+        "white-text": false,
+        "heading-type": "featured-heading",
+        "text-alignment": "left",
+        "text-column-width": 375,
+        "animation-enabled": true,
+        "image-offset": 48,
+        "overline": "",
+        "title": "Overlapping media",
+        "highlight-type": "italic",
+        "highlight-color": "accent-2",
+        "highlight-text": "none",
+        "description": "<p>Use this section to showcase product or brand imagery with overlapping elements.</p>",
+        "link-url": "",
+        "button-style": "button-1",
+        "link-text": "Optional link",
+        "mobile-spacing-above": "medium",
+        "mobile-spacing-below": "medium",
+        "mobile-text-alignment": "center"
+      }
+    },
     "featured_collection_4kDgr7": {
       "type": "featured-collection",
       "name": "Featured collection",
@@ -96,6 +165,8 @@
   },
   "order": [
     "featured_video_hF9aT4",
+    "featured_collections_cygXiQ",
+    "overlapping_media_EXL7yg",
     "featured_collection_4kDgr7",
     "main-collection"
   ]
