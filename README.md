@@ -1,6 +1,6 @@
 # Eleven Experience Shopify Theme
 
-A modern, responsive Shopify theme built with Liquid templating, CSS, and JavaScript.
+A modern, responsive Shopify theme built with the Elements theme, Liquid templating, CSS, and JavaScript.
 
 ## 🚀 Features
 
@@ -22,9 +22,23 @@ eleven-experience/
 ├── sections/        # Reusable section templates
 ├── snippets/        # Reusable code snippets
 ├── templates/       # Page templates
+│   ├── index.json   # Homepage (uses collection structure)
+│   ├── collection.json  # Collection pages
+│   ├── product.json # Product pages
+│   └── _archive/    # Archived unused templates
 ├── README.md        # This file
 └── .gitignore       # Git ignores
 ```
+
+## 🎯 Simplified Theme Structure
+
+This theme has been streamlined for a minimal product catalog:
+
+- **Homepage** (`index.json`) - Uses the main-collection section to display all products
+- **Collection Pages** (`collection.json`) - Standard collection/product listing pages
+- **Product Pages** (`product.json`) - Individual product detail pages
+
+**Note:** Search functionality has been disabled. To re-enable, go to Theme Customizer → Header → Enable search. The search template has been archived in `templates/_archive/`.
 
 ## 🛠️ Development Setup
 

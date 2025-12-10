@@ -38,7 +38,7 @@
         "show-sort-list": true,
         "show-refine-list": true,
         "swatches": "circle",
-        "show-search-link": true,
+        "show-search-link": false,
         "mobile-spacing-above": "medium",
         "mobile-spacing-below": "none"
       }

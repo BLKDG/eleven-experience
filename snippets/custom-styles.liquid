@@ -1,20 +1,38 @@
 <style>
   {%- comment -%}
-    Here's an example of a customization
-    You can paste this between the `<style>` tags to see how it works
-
-    /* Author - Date - Customization */
-    /* E.g. Troop Themes - 12th November .... - Changed paragraph colors */
-    @media only screen and (max-width: 767px) { /* mobile */
-      body {
-        color: blue;
-      }
-    }
-
-    @media only screen and (min-width: 768px) { /* desktop */
-      body {
-        color: green;
-      }
-    }
+    Custom font overrides for Eleven Experience
+    Using Larken for headlines and Gotham for sub-headings and body text
+    Adobe Fonts kit: https://use.typekit.net/pbb5cjw.css
   {%- endcomment -%}
+
+  :root {
+    /* Larken font for all headlines (banner, featured, section, block headings) */
+    --font--heading--family: "larken", serif;
+
+    /* Gotham font for sub-headings, body text, navigation, and buttons */
+    --font--paragraph--family: "gotham", sans-serif;
+    --font--nav--family: "gotham", sans-serif;
+  }
+
+  /* Ensure Gotham is applied to all body text, navigation, buttons, and sub-headings */
+  body,
+  [data-item="paragraph"],
+  [data-item="featured-paragraph"],
+  [data-item="nav-text"],
+  [data-item="button"],
+  [data-item="overline"],
+  [data-item="block-heading"] {
+    font-family: var(--font--paragraph--family) !important;
+  }
+
+  /* Ensure Larken is applied to all headline types */
+  [data-item="banner-heading"],
+  [data-item="featured-heading"],
+  [data-item="section-heading"] {
+    font-family: var(--font--heading--family) !important;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font--heading--family) !important;
+  }
 </style>
