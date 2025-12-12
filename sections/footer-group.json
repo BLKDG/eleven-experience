@@ -38,19 +38,11 @@
             "show-policy-links": true
           }
         },
-        "6600483d-1ee5-478c-a10a-911429f07f07": {
-          "type": "subscribe",
-          "disabled": true,
+        "about_jCBXCV": {
+          "type": "about",
           "settings": {
-            "background-color": "accent-3",
-            "white-text": true,
-            "heading-type": "section-heading",
-            "image-enabled": true,
-            "image-height": 170,
-            "heading": "Newsletter",
-            "description": "<p>Be the first to receive updates on new arrivals, special promos and sales.</p>",
-            "newsletter-enabled": true,
-            "show-social-icons": true
+            "about-title": "",
+            "text": "<p></p><p></p>"
           }
         }
       },
@@ -58,7 +50,7 @@
         "menu_YmEDtB",
         "46662d21-c8c2-4fb8-b905-9a142ac2f93a",
         "menu_bPNqNA",
-        "6600483d-1ee5-478c-a10a-911429f07f07"
+        "about_jCBXCV"
       ],
       "settings": {
         "border": "none",
