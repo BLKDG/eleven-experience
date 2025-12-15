@@ -97,7 +97,7 @@
         "overlay-style": "darken",
         "text-style": "none",
         "text-background-color": "transparent",
-        "image-display-type": "x-small",
+        "image-display-type": "fit-screen",
         "aspect-ratio": 56,
         "parallax-enabled": false,
         "image": "{{ collection.image }}",
