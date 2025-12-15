@@ -192,6 +192,7 @@
         "hotspot_C8cib6",
         "hotspot_hiWFwQ"
       ],
+      "disabled": true,
       "name": "Shop the look",
       "settings": {
         "border": "none",
@@ -225,6 +226,7 @@
     },
     "collection_with_highlight_PDpLUE": {
       "type": "collection-with-highlight",
+      "disabled": true,
       "name": "Collection with highlight",
       "settings": {
         "border": "none",
