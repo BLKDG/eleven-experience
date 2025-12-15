@@ -68,12 +68,12 @@
         "white-text": false,
         "display-type": "grid",
         "width": 3,
-        "heading": "Inspired Adventure Collections",
+        "heading": "",
         "heading-alignment": "center",
         "collection-list": [
-          "frontpage",
-          "test-collection-1",
-          "test-collection-2"
+          "mens",
+          "womens",
+          "accessories"
         ],
         "image-type": "collection",
         "mobile-spacing-above": "medium",
