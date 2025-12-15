@@ -94,7 +94,7 @@
         "section-alignment": "center",
         "display-type": "grid",
         "products-per-row--desktop": "3",
-        "collection": "all-products",
+        "collection": "all",
         "max-blocks": 12,
         "heading": "",
         "button-style": "button-3",
