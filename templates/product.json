@@ -390,12 +390,12 @@
       "type": "related-products",
       "settings": {
         "border": "none",
-        "spacing-above": "x-large",
-        "spacing-below": "x-large",
+        "spacing-above": "medium",
+        "spacing-below": "medium",
         "container-width": "4",
         "background-color": "light",
         "white-text": false,
-        "title": "You may also like",
+        "title": "Similarly adventuresome",
         "mobile-spacing-above": "x-large",
         "mobile-spacing-below": "x-large"
       }
