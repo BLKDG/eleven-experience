@@ -107,7 +107,7 @@
         "border": "none",
         "spacing-above": "large",
         "spacing-below": "large",
-        "background-color": "none",
+        "background-color": "light",
         "container-width": "4",
         "reverse-layout": false,
         "white-text": false,
@@ -123,8 +123,8 @@
         "highlight-text": "none",
         "description": "<p>Tailored experience around you that turns every day into an unforgettable story.</p>",
         "link-url": "",
-        "button-style": "button-1",
-        "link-text": "Optional link",
+        "button-style": "button-3",
+        "link-text": "Take off",
         "mobile-spacing-above": "medium",
         "mobile-spacing-below": "medium",
         "mobile-text-alignment": "center"
@@ -144,9 +144,9 @@
         "products-per-row--desktop": "3",
         "collection": "frontpage",
         "max-blocks": 6,
-        "heading": "Featured Products",
-        "button-style": "button-1",
-        "link-text": "View collection",
+        "heading": "Gear that guides us",
+        "button-style": "button-3",
+        "link-text": "Top Picks from the Pros",
         "mobile-spacing-above": "medium",
         "mobile-spacing-below": "medium",
         "mobile-heading-alignment": "left",
@@ -156,26 +156,6 @@
     "shop_the_look_3zkyth": {
       "type": "shop-the-look",
       "blocks": {
-        "hotspot_hiWFwQ": {
-          "type": "hotspot",
-          "settings": {
-            "product": "test-product-3",
-            "horizontal": 35,
-            "vertical": 33,
-            "mobile-horizontal": 35,
-            "mobile-vertical": 35
-          }
-        },
-        "hotspot_C8cib6": {
-          "type": "hotspot",
-          "settings": {
-            "product": "test-product-1",
-            "horizontal": 65,
-            "vertical": 50,
-            "mobile-horizontal": 65,
-            "mobile-vertical": 47
-          }
-        },
         "hotspot_jpiKbb": {
           "type": "hotspot",
           "settings": {
@@ -185,12 +165,32 @@
             "mobile-horizontal": 45,
             "mobile-vertical": 66
           }
+        },
+        "hotspot_C8cib6": {
+          "type": "hotspot",
+          "settings": {
+            "product": "test-product-1",
+            "horizontal": 77,
+            "vertical": 62,
+            "mobile-horizontal": 65,
+            "mobile-vertical": 47
+          }
+        },
+        "hotspot_hiWFwQ": {
+          "type": "hotspot",
+          "settings": {
+            "product": "test-product-3",
+            "horizontal": 35,
+            "vertical": 33,
+            "mobile-horizontal": 35,
+            "mobile-vertical": 35
+          }
         }
       },
       "block_order": [
-        "hotspot_hiWFwQ",
+        "hotspot_jpiKbb",
         "hotspot_C8cib6",
-        "hotspot_jpiKbb"
+        "hotspot_hiWFwQ"
       ],
       "name": "Shop the look",
       "settings": {
@@ -201,10 +201,10 @@
         "white-text": true,
         "container-width": "2",
         "hotspot-color": "white",
-        "heading": "Shop the look",
+        "heading": "The Full Experience",
         "heading-alignment": "center",
-        "image": "shopify://shop_images/Eleven_Deplar_Farm_Upton_2-6.jpg",
-        "button-style": "button-1",
+        "image": "shopify://shop_images/Eleven_Winterlake_Lodge--13.jpg",
+        "button-style": "button-4",
         "button-text": "Add all to cart",
         "mobile-spacing-above": "medium",
         "mobile-spacing-below": "medium"
@@ -253,15 +253,15 @@
           "test-product-2"
         ],
         "image": "shopify://shop_images/IcelandScenery-3.jpg",
-        "overline": "Overline text",
-        "heading": "Collection with highlight",
+        "overline": "Latest",
+        "heading": "And Greatest",
         "highlight-type": "italic",
         "highlight-color": "accent-2",
         "highlight-text": "none",
-        "description": "<p>Share something about a limited offer or temporary promotion.</p>",
+        "description": "<p>See what we’re up to on the water and in the backcountry. We’ll keep you up to speed on new lodges, favorite personalities, and stories worth following.</p>",
         "link-url": "/",
-        "button-style": "button-2",
-        "link-text": "Optional link",
+        "button-style": "button-4",
+        "link-text": "Portage",
         "mobile-spacing-above": "medium",
         "mobile-spacing-below": "medium",
         "mobile-media-layout": "slideshow",
@@ -272,6 +272,58 @@
         "mobile-text-horizontal-alignment": "center",
         "mobile-text-vertical-alignment": "center"
       }
+    },
+    "newsletter_McpBPb": {
+      "type": "newsletter",
+      "blocks": {
+        "overline_bB6yqM": {
+          "type": "overline",
+          "settings": {
+            "overline": "Sign Up"
+          }
+        },
+        "heading_J4bX93": {
+          "type": "heading",
+          "settings": {
+            "heading-type": "section-heading",
+            "title": "For Our Newsletter",
+            "highlight-type": "italic",
+            "highlight-color": "accent-2",
+            "highlight-text": "none"
+          }
+        },
+        "newsletter_rdMAy7": {
+          "type": "newsletter",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "overline_bB6yqM",
+        "heading_J4bX93",
+        "newsletter_rdMAy7"
+      ],
+      "name": "Newsletter",
+      "settings": {
+        "border": "none",
+        "spacing-above": "large",
+        "spacing-below": "large",
+        "container-width": "5",
+        "background-color": "accent-1",
+        "outer-background": false,
+        "reverse-layout": false,
+        "white-text": true,
+        "text-alignment": "left",
+        "image-disabled": false,
+        "image": "shopify://shop_images/IcelandScenery-7405.jpg",
+        "image-display-type": "x-small",
+        "aspect-ratio": 56,
+        "parallax-enabled": false,
+        "mobile-spacing-above": "medium",
+        "mobile-spacing-below": "medium",
+        "mobile-text-alignment": "left",
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134
+      }
     }
   },
   "order": [
@@ -281,6 +333,7 @@
     "featured_collection_4kDgr7",
     "shop_the_look_3zkyth",
     "main-collection",
-    "collection_with_highlight_PDpLUE"
+    "collection_with_highlight_PDpLUE",
+    "newsletter_McpBPb"
   ]
 }
