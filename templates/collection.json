@@ -11,6 +11,7 @@
   "sections": {
     "collection-header": {
       "type": "collection-header",
+      "disabled": true,
       "settings": {
         "spacing-above": "x-large",
         "spacing-below": "none",
@@ -31,6 +32,83 @@
         "parallax-enabled": false,
         "mobile-spacing-above": "x-large",
         "mobile-spacing-below": "none"
+      }
+    },
+    "image_with_text_overlay_4rKiai": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "overline_kQXqVW": {
+          "type": "overline",
+          "disabled": true,
+          "settings": {
+            "overline": "Overline text"
+          }
+        },
+        "heading_PkW7aF": {
+          "type": "heading",
+          "settings": {
+            "heading-type": "section-heading",
+            "title": "{{ collection.title }}",
+            "highlight-type": "italic",
+            "highlight-color": "accent-2",
+            "highlight-text": "none"
+          }
+        },
+        "description_Cm4LHW": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "description": "<p>Combine imagery with text to create stand-out campaign sections, eye-catching promotions, information blocks and more.</p>",
+            "mobile-hide-enabled": false
+          }
+        },
+        "button_93LgVD": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "style": "button-2",
+            "link-url": "",
+            "link-text": "Text"
+          }
+        }
+      },
+      "block_order": [
+        "overline_kQXqVW",
+        "heading_PkW7aF",
+        "description_Cm4LHW",
+        "button_93LgVD"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "border": "none",
+        "spacing-above": "none",
+        "spacing-below": "none",
+        "background-color": "none",
+        "shape-position": "bottom",
+        "shape-top-style": "moderate-wave",
+        "shape-top-color": "none",
+        "shape-bottom-style": "moderate-wave",
+        "shape-bottom-color": "none",
+        "container-width": "6",
+        "white-text": true,
+        "text-horizontal-alignment": "center",
+        "text-vertical-alignment": "center",
+        "text-width": 400,
+        "overlay-style": "darken-bottom",
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "image-display-type": "medium",
+        "aspect-ratio": 56,
+        "parallax-enabled": false,
+        "image": "{{ collection.image }}",
+        "mobile-full-width": true,
+        "mobile-spacing-above": "none",
+        "mobile-spacing-below": "none",
+        "mobile-image": "{{ collection.image }}",
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "mobile-text-horizontal-alignment": "center",
+        "mobile-text-vertical-alignment": "center"
       }
     },
     "collection-navigation": {
@@ -77,6 +155,7 @@
             "highlight-color": "light",
             "highlight-text": "none",
             "description": "<p>For a limited time only</p>",
+            "link-url": "",
             "link-text": "",
             "mobile-text-horizontal-alignment": "center",
             "mobile-text-vertical-alignment": "center",
@@ -106,6 +185,7 @@
             "highlight-color": "light",
             "highlight-text": "none",
             "description": "<p>Everyday adventures in the wild and the city.</p>",
+            "link-url": "",
             "link-text": "READ JOURNAL",
             "mobile-text-horizontal-alignment": "center",
             "mobile-text-vertical-alignment": "center",
@@ -193,6 +273,7 @@
   },
   "order": [
     "collection-header",
+    "image_with_text_overlay_4rKiai",
     "collection-navigation",
     "main-collection",
     "recent-products",
