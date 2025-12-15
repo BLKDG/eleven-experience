@@ -92,7 +92,7 @@
         "background-color": "none",
         "white-text": false,
         "section-alignment": "center",
-        "display-type": "slideshow",
+        "display-type": "grid",
         "products-per-row--desktop": "3",
         "collection": "all-products",
         "max-blocks": 12,
