@@ -45,7 +45,7 @@
         "description": "",
         "button-url": "shopify://collections/all",
         "button-style": "button-4",
-        "button-text": "Find your style",
+        "button-text": "",
         "mobile-spacing-above": "none",
         "mobile-spacing-below": "none",
         "mobile-full-width": true,
