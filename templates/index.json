@@ -82,6 +82,29 @@
         "mobile-width": "1"
       }
     },
+    "featured_collection_4kDgr7": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "border": "none",
+        "spacing-above": "large",
+        "spacing-below": "large",
+        "background-color": "none",
+        "white-text": false,
+        "section-alignment": "center",
+        "display-type": "slideshow",
+        "products-per-row--desktop": "3",
+        "collection": "all-products",
+        "max-blocks": 12,
+        "heading": "",
+        "button-style": "button-3",
+        "link-text": "",
+        "mobile-spacing-above": "medium",
+        "mobile-spacing-below": "medium",
+        "mobile-heading-alignment": "left",
+        "products-per-row--mobile": "1"
+      }
+    },
     "overlapping_media_EXL7yg": {
       "type": "overlapping-media",
       "blocks": {
@@ -128,29 +151,6 @@
         "mobile-spacing-above": "medium",
         "mobile-spacing-below": "medium",
         "mobile-text-alignment": "center"
-      }
-    },
-    "featured_collection_4kDgr7": {
-      "type": "featured-collection",
-      "name": "Featured collection",
-      "settings": {
-        "border": "none",
-        "spacing-above": "large",
-        "spacing-below": "large",
-        "background-color": "none",
-        "white-text": false,
-        "section-alignment": "center",
-        "display-type": "slideshow",
-        "products-per-row--desktop": "3",
-        "collection": "frontpage",
-        "max-blocks": 6,
-        "heading": "Gear that guides us",
-        "button-style": "button-3",
-        "link-text": "Top Picks from the Pros",
-        "mobile-spacing-above": "medium",
-        "mobile-spacing-below": "medium",
-        "mobile-heading-alignment": "left",
-        "products-per-row--mobile": "1"
       }
     },
     "shop_the_look_3zkyth": {
@@ -337,8 +337,8 @@
   "order": [
     "featured_video_hF9aT4",
     "featured_collections_cygXiQ",
-    "overlapping_media_EXL7yg",
     "featured_collection_4kDgr7",
+    "overlapping_media_EXL7yg",
     "shop_the_look_3zkyth",
     "main-collection",
     "collection_with_highlight_PDpLUE",
