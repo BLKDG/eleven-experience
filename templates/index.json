@@ -309,7 +309,7 @@
         "spacing-below": "large",
         "container-width": "5",
         "background-color": "accent-1",
-        "outer-background": false,
+        "outer-background": true,
         "reverse-layout": false,
         "white-text": true,
         "text-alignment": "left",
