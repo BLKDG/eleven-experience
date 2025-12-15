@@ -23,6 +23,8 @@
     "typography--featured--size": 48,
     "typography--featured--mobile-size": 38,
     "typography--nav": "sans-serif",
+    "typography--sub-nav--size": 12,
+    "typography--sub-nav--uppercase": false,
     "typography--paragraph": "sans-serif",
     "content--image-opacity": 65,
     "content--shadow-opacity": 15,
