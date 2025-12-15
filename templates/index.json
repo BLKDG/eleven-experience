@@ -66,7 +66,7 @@
         "spacing-below": "large",
         "background-color": "none",
         "white-text": false,
-        "display-type": "slideshow",
+        "display-type": "grid",
         "width": 3,
         "heading": "Inspired Adventure Collections",
         "heading-alignment": "center",
@@ -79,7 +79,7 @@
         "mobile-spacing-above": "medium",
         "mobile-spacing-below": "medium",
         "mobile-heading-alignment": "left",
-        "mobile-width": "2"
+        "mobile-width": "1"
       }
     },
     "overlapping_media_EXL7yg": {
@@ -116,12 +116,12 @@
         "text-column-width": 375,
         "animation-enabled": true,
         "image-offset": 48,
-        "overline": "",
-        "title": "Overlapping media",
+        "overline": "gear that moves",
+        "title": "Personalized Adventures",
         "highlight-type": "italic",
         "highlight-color": "accent-2",
         "highlight-text": "none",
-        "description": "<p>Use this section to showcase product or brand imagery with overlapping elements.</p>",
+        "description": "<p>Tailored experience around you that turns every day into an unforgettable story.</p>",
         "link-url": "",
         "button-style": "button-1",
         "link-text": "Optional link",
