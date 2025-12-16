@@ -47,7 +47,7 @@
         "heading_PkW7aF": {
           "type": "heading",
           "settings": {
-            "heading-type": "section-heading",
+            "heading-type": "banner-heading",
             "title": "{{ collection.title }}",
             "highlight-type": "italic",
             "highlight-color": "accent-2",
