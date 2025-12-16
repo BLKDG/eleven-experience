@@ -54,7 +54,7 @@
         "text-alignment": "left",
         "image-disabled": false,
         "image": "shopify://shop_images/ElevenChileHiking-00648.jpg",
-        "image-display-type": "small",
+        "image-display-type": "x-small",
         "aspect-ratio": 56,
         "parallax-enabled": false,
         "mobile-spacing-above": "none",
