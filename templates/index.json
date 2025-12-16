@@ -111,13 +111,13 @@
         "image_bUfLz6": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/IcelandScenery-7405.jpg"
+            "image": "shopify://shop_images/cat-skiing-in-colorado-2.webp"
           }
         },
         "image_KJxi8N": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/IcelandScenery.jpg"
+            "image": "shopify://shop_images/Eleven_Revelstoke_Lodge-MitchCheek-6.jpg"
           }
         }
       },
@@ -128,8 +128,8 @@
       "name": "Overlapping media",
       "settings": {
         "border": "none",
-        "spacing-above": "large",
-        "spacing-below": "large",
+        "spacing-above": "x-large",
+        "spacing-below": "x-large",
         "background-color": "light",
         "container-width": "4",
         "reverse-layout": false,
@@ -315,8 +315,8 @@
       "name": "Newsletter",
       "settings": {
         "border": "none",
-        "spacing-above": "large",
-        "spacing-below": "large",
+        "spacing-above": "x-large",
+        "spacing-below": "x-large",
         "container-width": "5",
         "background-color": "accent-1",
         "outer-background": true,
@@ -324,7 +324,7 @@
         "white-text": true,
         "text-alignment": "left",
         "image-disabled": false,
-        "image": "shopify://shop_images/IcelandScenery-7405.jpg",
+        "image": "shopify://shop_images/Eleven_Revelstoke_Lodge-MitchCheek-2.jpg",
         "image-display-type": "x-small",
         "aspect-ratio": 56,
         "parallax-enabled": false,
