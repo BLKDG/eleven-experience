@@ -21,10 +21,6 @@
   if section.index < 3
     assign loading = 'eager'
   endif
-
-  capture sizes
-    render 'utils', name: 'sizes',  columns: columns, mobile_columns: mobile_columns
-  endcapture
 -%}
 
 {%- capture collection_items -%}
@@ -38,14 +34,23 @@
         endif
       -%}
 
+      {%- liquid
+        assign image_sizes = '(max-width: 767px) 100vw, (max-width: 1024px) 50vw, 1200px'
+        if columns == 2
+          assign image_sizes = '(max-width: 767px) 100vw, (max-width: 1024px) 50vw, 1600px'
+        elsif columns == 1
+          assign image_sizes = '(max-width: 767px) 100vw, 2000px'
+        endif
+      -%}
+
       {%- capture image -%}
         {%- if collection.image and image_type == 'collection' -%}
           {{-
             collection.image |
-            image_url: width: collection.image.width |
+            image_url: width: 2400 |
             image_tag:
-              widths: '200, 300, 400, 500, 600, 700, 800, 900, 1000, 1200, 1500',
-              sizes: sizes,
+              widths: '300, 400, 500, 600, 700, 800, 900, 1000, 1200, 1500, 1800, 2000, 2400',
+              sizes: image_sizes,
               loading: loading
           -}}
 
@@ -55,10 +60,10 @@
               {%- assign no_product_images = false -%}
               {{-
                 product.featured_media.preview_image |
-                image_url: width: product.featured_media.preview_image.width |
+                image_url: width: 2400 |
                 image_tag:
-                  widths: '200, 300, 400, 500, 600, 700, 800, 900, 1000, 1200, 1500',
-                  sizes: sizes,
+                  widths: '300, 400, 500, 600, 700, 800, 900, 1000, 1200, 1500, 1800, 2000, 2400',
+                  sizes: image_sizes,
                   loading: loading
               -}}
               {%- break -%}
