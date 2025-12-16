@@ -312,6 +312,7 @@
         "description_Mf4epC",
         "newsletter_rdMAy7"
       ],
+      "disabled": true,
       "name": "Newsletter",
       "settings": {
         "border": "none",
