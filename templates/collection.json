@@ -166,6 +166,7 @@
         },
         "promotion-2": {
           "type": "promotion",
+          "disabled": true,
           "settings": {
             "position": 15,
             "promo-width": "full",
@@ -201,13 +202,13 @@
         "promotion-2"
       ],
       "settings": {
-        "spacing-above": "medium",
-        "spacing-below": "none",
+        "spacing-above": "small",
+        "spacing-below": "large",
         "products-per-row--desktop": 3,
         "products-per-row--mobile": "2",
         "number-of-rows": 8,
         "mobile-spacing-above": "medium",
-        "mobile-spacing-below": "none"
+        "mobile-spacing-below": "large"
       }
     },
     "recent-products": {
