@@ -1,0 +1,431 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main-product": {
+      "type": "main-product",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "options": {
+          "type": "options",
+          "settings": {
+            "variant-style": "buttons",
+            "swatches": "square",
+            "size-chart-enabled": true,
+            "size-chart-option": "size",
+            "size-chart-content": ""
+          }
+        },
+        "low-stock": {
+          "type": "low-stock",
+          "settings": {
+            "threshold": 5,
+            "progress-bar-enabled": true
+          }
+        },
+        "buy-buttons-1": {
+          "type": "buy-buttons",
+          "settings": {
+            "smart-payment-enabled": true,
+            "primary-button-style": "button-1",
+            "secondary-button-style": "button-3",
+            "sticky-add-enabled": true
+          }
+        },
+        "pickup": {
+          "type": "pickup",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "collapsible-row-enabled": false,
+            "heading": "Description"
+          }
+        },
+        "complementary-products": {
+          "type": "complementary-products",
+          "settings": {
+            "title": "Buy it with Logan Day Pack, and save!",
+            "max-products": 2,
+            "collapsible-row-enabled": false
+          }
+        },
+        "collapsible-row": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "Size Guide",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br/><br/></p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "collapsible_row_deecD8": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "Materials",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "collapsible_row_fxLCCq": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "Shipping & Returns",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "social-sharing-1": {
+          "type": "social-sharing",
+          "settings": {
+            "facebook-enabled": true,
+            "x-enabled": true,
+            "pinterest-enabled": true,
+            "email-enabled": false,
+            "url-enabled": true
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "price",
+        "options",
+        "low-stock",
+        "buy-buttons-1",
+        "pickup",
+        "description",
+        "complementary-products",
+        "collapsible-row",
+        "collapsible_row_deecD8",
+        "collapsible_row_fxLCCq",
+        "social-sharing-1"
+      ],
+      "settings": {
+        "spacing-above": "none",
+        "spacing-below": "none",
+        "container-width": "6",
+        "media-layout": "one",
+        "thumbnail-width": 80,
+        "media-gap": 8,
+        "text-column-width": 375,
+        "column-spacing": "close",
+        "text-alignment": "left",
+        "heading-enabled": false,
+        "heading-sizes-enabled": true,
+        "heading-size": 40,
+        "breadcrumbs-enabled": true,
+        "modal-enabled": true,
+        "variant-scroll-enabled": true,
+        "image-zoom-enabled": true,
+        "loop-enabled": false,
+        "mobile-spacing-above": "none",
+        "mobile-spacing-below": "none",
+        "mobile-text-alignment": "center",
+        "mobile-media-layout": "slideshow"
+      }
+    },
+    "icons-row": {
+      "type": "icons-row",
+      "blocks": {
+        "icon-1": {
+          "type": "icon",
+          "settings": {
+            "icon": "medal",
+            "title": "Handcrafted Excellence",
+            "description": "<p>Every piece is made by skilled hands, ensuring quality that stands the test of time and wear.</p>",
+            "link-url": "",
+            "link-text": ""
+          }
+        },
+        "icon-2": {
+          "type": "icon",
+          "settings": {
+            "icon": "users-four",
+            "title": "Community Focused",
+            "description": "<p>A portion of every purchase goes towards supporting local artisans and community initiatives.</p>",
+            "link-url": "",
+            "link-text": ""
+          }
+        },
+        "icon-3": {
+          "type": "icon",
+          "settings": {
+            "icon": "globe-hemisphere-west",
+            "title": "Sustainably Sourced",
+            "description": "<p>From fabric to finish, we prioritize ethical materials to protect our planet’s future.</p>",
+            "link-url": "",
+            "link-text": ""
+          }
+        },
+        "icon-4": {
+          "type": "icon",
+          "settings": {
+            "icon": "shield-check",
+            "title": "Timeless Durability",
+            "description": "<p>Designed with purpose, our products are built to endure life’s toughest adventures.</p>",
+            "link-url": "",
+            "link-text": ""
+          }
+        }
+      },
+      "block_order": [
+        "icon-1",
+        "icon-2",
+        "icon-3",
+        "icon-4"
+      ],
+      "settings": {
+        "border": "none",
+        "spacing-above": "x-large",
+        "spacing-below": "x-large",
+        "block-spacing": true,
+        "background-color": "none",
+        "outer-background": true,
+        "white-text": false,
+        "section-alignment": "center",
+        "text-alignment": "center",
+        "container-width": "4",
+        "width": 4,
+        "icon-width": 0,
+        "overline": "",
+        "heading": "Built for the Journey, Crafted for Change",
+        "description": "",
+        "link-url": "",
+        "button-style": "button-1",
+        "link-text": "",
+        "mobile-spacing-above": "x-large",
+        "mobile-spacing-below": "x-large",
+        "mobile-heading-alignment": "left",
+        "mobile-text-alignment": "center",
+        "mobile-width": "1",
+        "mobile-media-layout": "slideshow"
+      }
+    },
+    "grid-with-overlay": {
+      "type": "grid-with-overlay",
+      "blocks": {
+        "image-1": {
+          "type": "image",
+          "settings": {
+            "x-blocks": "1",
+            "y-blocks": "1",
+            "text-width": 500,
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "image": "shopify://shop_images/Eleven-Rio_Palena_Lodge-FG-16-2_1.png",
+            "title": "",
+            "link-url": "",
+            "link-text": "",
+            "mobile-text-horizontal-alignment": "center",
+            "mobile-text-vertical-alignment": "center"
+          }
+        },
+        "image-2": {
+          "type": "image",
+          "settings": {
+            "x-blocks": "1",
+            "y-blocks": "1",
+            "text-width": 500,
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "image": "shopify://shop_images/1-acf_9011.webp",
+            "title": "",
+            "link-url": "",
+            "link-text": "",
+            "mobile-text-horizontal-alignment": "center",
+            "mobile-text-vertical-alignment": "center"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "x-blocks": "1",
+            "y-blocks": "1",
+            "text-background-color": "accent-1",
+            "white-text": true,
+            "text-width": 500,
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "overline": "",
+            "title": "Forge your path, one step at a time",
+            "description": "",
+            "link-url": "",
+            "link-text": "",
+            "mobile-text-horizontal-alignment": "center",
+            "mobile-text-vertical-alignment": "center"
+          }
+        },
+        "image-3": {
+          "type": "image",
+          "settings": {
+            "x-blocks": "1",
+            "y-blocks": "1",
+            "text-width": 500,
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "image": "shopify://shop_images/Screenshot_2025-12-16_at_9.10.25_AM.png",
+            "title": "",
+            "link-url": "",
+            "link-text": "",
+            "mobile-text-horizontal-alignment": "center",
+            "mobile-text-vertical-alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "image-1",
+        "image-2",
+        "text",
+        "image-3"
+      ],
+      "settings": {
+        "border": "none",
+        "spacing-above": "none",
+        "spacing-below": "none",
+        "container-width": "6",
+        "background-color": "none",
+        "heading-white-text": false,
+        "section-alignment": "center",
+        "spacing": false,
+        "width": 4,
+        "row-height": 500,
+        "white-text": true,
+        "overlay-style": "darken",
+        "text-style": "none",
+        "heading-type": "section-heading",
+        "overline": "",
+        "heading": "",
+        "description": "",
+        "link-url": "",
+        "button-style": "button-1",
+        "link-text": "",
+        "mobile-full-width": false,
+        "mobile-spacing-above": "none",
+        "mobile-spacing-below": "none",
+        "mobile-width": "2",
+        "mobile-spacing": true,
+        "mobile-image-display-type": "aspect-ratio",
+        "mobile-aspect-ratio": 134
+      }
+    },
+    "collapsible-rows": {
+      "type": "collapsible-rows",
+      "blocks": {
+        "collapsible-row-1": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "What is Eleven Experience?",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "collapsible-row-2": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "Where are your materials sourced from?",
+            "description": "<p>We work with ethical suppliers who prioritize sustainable practices. You can learn more about our sourcing philosophy on our <a href=\"/pages/sustainability\" title=\"Sustainability\">sustainability page</a>.</p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "collapsible-row-3": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "How do you give back to the community?",
+            "description": "<p>A portion of every purchase supports local artisans and community projects. </p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "collapsible-row-4": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "What’s the best way to care for your products?",
+            "description": "<p>We recommend following the care instructions included with your purchase. For further tips, feel free to <a href=\"/pages/contact\" title=\"Contact\">contact us</a>, and we’ll be happy to assist.</p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "collapsible-row-5": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "Do you offer international shipping?",
+            "description": "<p>Yes, we do! For shipping rates and delivery times, please visit our <a href=\"/pages/shipping-returns\" title=\"Shipping & Returns\">Shipping page</a>.</p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "collapsible-row-6": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "What if I need to return or exchange an item?",
+            "description": "<p>We aim to ensure your satisfaction. If something isn’t right, please refer to our return policy detailed on the <a href=\"/pages/shipping-returns\" title=\"Shipping & Returns\">Shipping page</a>, or reach out via our <a href=\"/pages/contact\" title=\"Contact\">Contact Us page</a>.</p>",
+            "page-content": "",
+            "default-open": false
+          }
+        }
+      },
+      "block_order": [
+        "collapsible-row-1",
+        "collapsible-row-2",
+        "collapsible-row-3",
+        "collapsible-row-4",
+        "collapsible-row-5",
+        "collapsible-row-6"
+      ],
+      "settings": {
+        "border": "none",
+        "spacing-above": "x-large",
+        "spacing-below": "x-large",
+        "background-color": "none",
+        "white-text": false,
+        "container-width": "3",
+        "two-columns-enabled": true,
+        "heading": "F.A.Q.",
+        "heading-alignment": "center",
+        "mobile-full-width": false,
+        "mobile-spacing-above": "x-large",
+        "mobile-spacing-below": "x-large"
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "border": "none",
+        "spacing-above": "large",
+        "spacing-below": "large",
+        "container-width": "4",
+        "background-color": "light",
+        "white-text": false,
+        "title": "Similarly adventuresome",
+        "mobile-spacing-above": "x-large",
+        "mobile-spacing-below": "x-large"
+      }
+    }
+  },
+  "order": [
+    "main-product",
+    "icons-row",
+    "grid-with-overlay",
+    "collapsible-rows",
+    "related-products"
+  ]
+}
