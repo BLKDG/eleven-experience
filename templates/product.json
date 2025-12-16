@@ -410,8 +410,8 @@
       "type": "related-products",
       "settings": {
         "border": "none",
-        "spacing-above": "medium",
-        "spacing-below": "medium",
+        "spacing-above": "large",
+        "spacing-below": "large",
         "container-width": "4",
         "background-color": "light",
         "white-text": false,
