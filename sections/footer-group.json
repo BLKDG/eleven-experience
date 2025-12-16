@@ -11,6 +11,59 @@
   "type": "footer",
   "name": "Footer Group",
   "sections": {
+    "newsletter_fcPVy3": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_iMzmj3": {
+          "type": "heading",
+          "settings": {
+            "heading-type": "section-heading",
+            "title": "Sign Up For Our Newsletter",
+            "highlight-type": "italic",
+            "highlight-color": "accent-2",
+            "highlight-text": "none"
+          }
+        },
+        "description_zYhf6B": {
+          "type": "description",
+          "settings": {
+            "description": "<p>By subscribing you are agreeing to our <a href=\"https://elevenexperience.com/policies/privacy-policy\" target=\"_blank\" title=\"Privacy Policy\">Privacy Policy</a>. You can unsubscribe from emails at any time.</p>",
+            "mobile-hide-enabled": false
+          }
+        },
+        "newsletter_RK3Cbi": {
+          "type": "newsletter",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_iMzmj3",
+        "description_zYhf6B",
+        "newsletter_RK3Cbi"
+      ],
+      "name": "Newsletter",
+      "settings": {
+        "border": "none",
+        "spacing-above": "medium",
+        "spacing-below": "medium",
+        "container-width": "5",
+        "background-color": "accent-1",
+        "outer-background": true,
+        "reverse-layout": false,
+        "white-text": true,
+        "text-alignment": "left",
+        "image-disabled": false,
+        "image": "shopify://shop_images/ElevenChileHiking-00648.jpg",
+        "image-display-type": "x-small",
+        "aspect-ratio": 56,
+        "parallax-enabled": false,
+        "mobile-spacing-above": "medium",
+        "mobile-spacing-below": "medium",
+        "mobile-text-alignment": "left",
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134
+      }
+    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -107,6 +160,7 @@
     }
   },
   "order": [
+    "newsletter_fcPVy3",
     "footer",
     "footer-bar"
   ]
