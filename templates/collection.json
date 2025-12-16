@@ -180,14 +180,15 @@
             "border-type": "none",
             "parallax-enabled": false,
             "white-text": false,
+            "image": "shopify://shop_images/Eleven_Revelstoke_Lodge-MitchCheek-27.jpg",
             "overline": "",
             "title": "Adventured inspired",
             "highlight-type": "italic",
             "highlight-color": "light",
             "highlight-text": "none",
             "description": "<p>Everyday adventures in the wild and the city.</p>",
-            "link-url": "",
-            "link-text": "READ JOURNAL",
+            "link-url": "https://elevenexperience.com/guided-adventures",
+            "link-text": "JOIN US",
             "mobile-text-horizontal-alignment": "center",
             "mobile-text-vertical-alignment": "center",
             "mobile-hide-description": false,
@@ -211,6 +212,7 @@
     },
     "recent-products": {
       "type": "recent-products",
+      "disabled": true,
       "settings": {
         "border": "none",
         "spacing-above": "x-large",
@@ -225,6 +227,7 @@
     },
     "image-with-text": {
       "type": "image-with-text",
+      "disabled": true,
       "settings": {
         "border": "none",
         "spacing-above": "none",
