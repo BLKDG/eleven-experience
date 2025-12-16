@@ -121,7 +121,7 @@
         "spacing-above": "none",
         "spacing-below": "none",
         "container-width": "6",
-        "media-layout": "one",
+        "media-layout": "two",
         "thumbnail-width": 80,
         "media-gap": 8,
         "text-column-width": 375,
