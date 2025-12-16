@@ -32,7 +32,7 @@
         "text-background-color": "transparent",
         "heading-type": "featured-heading",
         "autoplay": true,
-        "video-display-type": "aspect-ratio",
+        "video-display-type": "x-small",
         "aspect-ratio": 44,
         "play-button-style": "solid",
         "video-upload": "shopify://files/videos/EE_Hero_Desktop.mp4",
