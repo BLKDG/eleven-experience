@@ -57,7 +57,7 @@
         "image-display-type": "x-small",
         "aspect-ratio": 56,
         "parallax-enabled": false,
-        "mobile-spacing-above": "medium",
+        "mobile-spacing-above": "none",
         "mobile-spacing-below": "medium",
         "mobile-text-alignment": "left",
         "mobile-image-display-type": "original",
