@@ -264,7 +264,7 @@
             "text-horizontal-alignment": "center",
             "text-vertical-alignment": "center",
             "overline": "",
-            "title": "Forge your path, one step at a time",
+            "title": "the Eleven Experience",
             "description": "",
             "link-url": "",
             "link-text": "",
@@ -332,7 +332,7 @@
           "type": "collapsible-row",
           "settings": {
             "heading": "What is Eleven Experience?",
-            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>",
+            "description": "<p>At Eleven, we believe the adventures we pursue are the experiences that define us. Our lodges offer fewer rooms and an intimate atmosphere, creating a personal and private experience. We craft unique adventures with tailored itineraries, expert guides, and thoughtful attention to detail. Each day is carefully planned to make your stay unforgettable. From first light to fireside, the difference between remarkable and exceptional is Eleven.</p>",
             "page-content": "",
             "default-open": false
           }
