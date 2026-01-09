@@ -84,7 +84,7 @@
         "spacing-above": "none",
         "spacing-below": "none",
         "background-color": "none",
-        "shape-position": "bottom",
+        "shape-position": "none",
         "shape-top-style": "moderate-wave",
         "shape-top-color": "none",
         "shape-bottom-style": "moderate-wave",

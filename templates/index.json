@@ -18,7 +18,7 @@
         "spacing-below": "none",
         "container-width": "6",
         "background-color": "none",
-        "shape-position": "bottom",
+        "shape-position": "none",
         "shape-top-style": "moderate-wave",
         "shape-top-color": "none",
         "shape-bottom-style": "broad-wave",
