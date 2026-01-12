@@ -191,6 +191,7 @@
         "icon-3",
         "icon-4"
       ],
+      "disabled": true,
       "settings": {
         "border": "none",
         "spacing-above": "x-large",
