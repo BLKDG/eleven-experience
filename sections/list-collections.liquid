@@ -22,6 +22,11 @@
   assign view = section.settings.view
   assign white_text = section.settings.white-text
 
+  assign overlay_text_enabled = section.settings.overlay-text-enabled
+  assign overlay_text_position = section.settings.overlay-text-position
+  assign overlay_darkening = section.settings.overlay-darkening
+  assign overlay_text_color = section.settings.overlay-text-color
+
   assign hover_enabled = false
   if overlay_style == 'hover'
     assign hover_enabled = true
@@ -36,6 +41,15 @@
 {%- capture sizes -%}
   (max-width: 767px) {{ 100 | divided_by: mobile_columns }}vw, {{ 100 | divided_by: columns }}vw
 {%- endcapture %}
+
+{%- if overlay_text_enabled and overlay_text_color != blank -%}
+  <style>
+    [data-section-id="{{ section.id }}"] .featured-grid--item .stacked-text--root,
+    [data-section-id="{{ section.id }}"] .featured-grid--item .stacked-text--root * {
+      color: {{ overlay_text_color }} !important;
+    }
+  </style>
+{%- endif -%}
 
 {%- case view -%}
   {%- when 'collection-thumbnails' -%}
@@ -111,9 +125,10 @@
                 href="{{ collection.url }}"
                 aria-label="{{ collection.title }}"
               >
-                <div class="featured-grid--item--container">
+                <div class="featured-grid--item--container"{% if overlay_text_enabled %} style="position:relative;"{% endif %}>
                   <div
                     class="featured-grid--item--media"
+                    {% if overlay_text_enabled %} style="position:relative;"{% endif %}
                     {% unless settings.transitions--image %}
                       data-transition-item
                       data-transition-type="zoom-in"
@@ -160,7 +175,31 @@
                         placeholder_index: 1
                       -%}
                     {%- endif -%}
+
+                    {%- if overlay_text_enabled and overlay_darkening > 0 -%}
+                      <div
+                        class="featured-grid--item--darkening-overlay"
+                        style="position:absolute;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,{{ overlay_darkening | divided_by: 100.0 }});pointer-events:none;"
+                      ></div>
+                    {%- endif -%}
                   </div>
+
+                  {%- liquid
+                    if overlay_text_enabled
+                      case overlay_text_position
+                        when 'upper'
+                          assign text_y_alignment = 'top'
+                        when 'middle'
+                          assign text_y_alignment = 'center'
+                        when 'lower'
+                          assign text_y_alignment = 'bottom'
+                        else
+                          assign text_y_alignment = 'center'
+                      endcase
+                    else
+                      assign text_y_alignment = 'center'
+                    endif
+                  -%}
 
                   {%-
                     render 'stacked-text',
@@ -171,7 +210,7 @@
                     style: text_style,
                     title: collection.title,
                     x_alignment: 'center',
-                    y_alignment: 'center'
+                    y_alignment: text_y_alignment
                   -%}
                 </div>
               </a>
@@ -485,6 +524,50 @@
       ],
       "default": "block-heading",
       "visible_if": "{{ section.settings.view == 'collection-thumbnails' }}"
+    },
+    {
+      "type": "header",
+      "content": "Overlay text",
+      "visible_if": "{{ section.settings.view == 'collection-thumbnails' }}"
+    },
+    {
+      "id": "overlay-text-enabled",
+      "label": "Enable overlay text",
+      "type": "checkbox",
+      "default": false,
+      "info": "Overlay text directly on images with custom positioning and styling",
+      "visible_if": "{{ section.settings.view == 'collection-thumbnails' }}"
+    },
+    {
+      "id": "overlay-text-position",
+      "label": "Vertical position",
+      "type": "select",
+      "options": [
+        { "label": "Upper", "value": "upper" },
+        { "label": "Middle", "value": "middle" },
+        { "label": "Lower", "value": "lower" }
+      ],
+      "default": "middle",
+      "visible_if": "{{ section.settings.overlay-text-enabled == true }}"
+    },
+    {
+      "id": "overlay-darkening",
+      "label": "Image darkening",
+      "type": "range",
+      "min": 0,
+      "max": 50,
+      "step": 5,
+      "unit": "%",
+      "default": 20,
+      "info": "Darkening effect applied to the image (0-50%)",
+      "visible_if": "{{ section.settings.overlay-text-enabled == true }}"
+    },
+    {
+      "id": "overlay-text-color",
+      "label": "Text color",
+      "type": "color",
+      "default": "#ffffff",
+      "visible_if": "{{ section.settings.overlay-text-enabled == true }}"
     },
     {
       "type": "header",
