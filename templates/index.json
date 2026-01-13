@@ -76,6 +76,10 @@
           "hats-accessories"
         ],
         "image-type": "collection",
+        "overlay-text-enabled": true,
+        "overlay-text-position": "upper",
+        "overlay-darkening": 25,
+        "overlay-text-color": "#ffffff",
         "mobile-spacing-above": "medium",
         "mobile-spacing-below": "medium",
         "mobile-heading-alignment": "left",
