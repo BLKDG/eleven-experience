@@ -17,6 +17,11 @@
   assign spacing_below = section.settings.spacing-below
   assign white_text = section.settings.white-text
 
+  assign overlay_text_enabled = section.settings.overlay-text-enabled
+  assign overlay_text_position = section.settings.overlay-text-position
+  assign overlay_darkening = section.settings.overlay-darkening
+  assign overlay_text_color = section.settings.overlay-text-color
+
   assign loading = 'lazy'
   if section.index < 3
     assign loading = 'eager'
@@ -90,6 +95,7 @@
         <div
           class="featured-collections--item"
           data-container="block"
+          {% if overlay_text_enabled %} style="position:relative;"{% endif %}
           {% unless settings.transitions--other %}
             data-transition-item="{{ section.id }}"
           {% endunless %}
@@ -97,6 +103,7 @@
           <div
             class="featured-collections--image"
             data-item="image"
+            {% if overlay_text_enabled %} style="position:relative;"{% endif %}
             {% unless settings.transitions--image %}
               data-transition-item
               data-transition-type="zoom-in"
@@ -104,10 +111,41 @@
             {% endunless %}
           >
             {{- image -}}
+
+            {%- if overlay_text_enabled and overlay_darkening > 0 -%}
+              <div
+                class="featured-collections--darkening-overlay"
+                style="position:absolute;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,{{ overlay_darkening | divided_by: 100.0 }});pointer-events:none;z-index:1;"
+              ></div>
+            {%- endif -%}
+
+            {%- if overlay_text_enabled -%}
+              {%- liquid
+                case overlay_text_position
+                  when 'upper'
+                    assign text_position_style = 'top:20px;bottom:auto;'
+                  when 'middle'
+                    assign text_position_style = 'top:50%;bottom:auto;transform:translateY(-50%);'
+                  when 'lower'
+                    assign text_position_style = 'top:auto;bottom:20px;'
+                  else
+                    assign text_position_style = 'top:50%;bottom:auto;transform:translateY(-50%);'
+                endcase
+              -%}
+              <h3 
+                class="featured-collections--title featured-collections--title-overlay" 
+                data-item="block-heading"
+                style="position:absolute;left:0;right:0;{{ text_position_style }}text-align:center;z-index:2;{% if overlay_text_color != blank %}color:{{ overlay_text_color }} !important;{% endif %}"
+              >
+                {{- collection.title -}}
+              </h3>
+            {%- endif -%}
           </div>
-          <h3 class="featured-collections--title" data-item="block-heading">
-            {{- collection.title -}}
-          </h3>
+          {%- unless overlay_text_enabled -%}
+            <h3 class="featured-collections--title" data-item="block-heading">
+              {{- collection.title -}}
+            </h3>
+          {%- endunless -%}
         </div>
       </a>{%- unless forloop.last -%}<span class="divider"></span>{%- endunless -%}
     {%- endfor -%}
@@ -117,6 +155,7 @@
       <div
         class="featured-collections--item"
         data-container="block"
+        {% if overlay_text_enabled %} style="position:relative;"{% endif %}
         {% unless settings.transitions--other %}
           data-transition-item="{{ section.id }}"
         {% endunless %}
@@ -124,6 +163,7 @@
         <div
           class="featured-collections--image"
           data-item="image"
+          {% if overlay_text_enabled %} style="position:relative;"{% endif %}
           {% unless settings.transitions--image %}
             data-transition-item
             data-transition-type="zoom-in"
@@ -136,10 +176,41 @@
             aspect_ratio: 1,
             placeholder_index: forloop.index
           -%}
+
+          {%- if overlay_text_enabled and overlay_darkening > 0 -%}
+            <div
+              class="featured-collections--darkening-overlay"
+              style="position:absolute;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,{{ overlay_darkening | divided_by: 100.0 }});pointer-events:none;z-index:1;"
+            ></div>
+          {%- endif -%}
+
+          {%- if overlay_text_enabled -%}
+            {%- liquid
+              case overlay_text_position
+                when 'upper'
+                  assign text_position_style = 'top:20px;bottom:auto;'
+                when 'middle'
+                  assign text_position_style = 'top:50%;bottom:auto;transform:translateY(-50%);'
+                when 'lower'
+                  assign text_position_style = 'top:auto;bottom:20px;'
+                else
+                  assign text_position_style = 'top:50%;bottom:auto;transform:translateY(-50%);'
+              endcase
+            -%}
+            <h3 
+              class="featured-collections--title featured-collections--title-overlay" 
+              data-item="block-heading"
+              style="position:absolute;left:0;right:0;{{ text_position_style }}text-align:center;z-index:2;{% if overlay_text_color != blank %}color:{{ overlay_text_color }} !important;{% endif %}"
+            >
+              {{- collection_title_t -}}
+            </h3>
+          {%- endif -%}
         </div>
-        <h3 class="featured-collections--title" data-item="block-heading">
-          {{- collection_title_t -}}
-        </h3>
+        {%- unless overlay_text_enabled -%}
+          <h3 class="featured-collections--title" data-item="block-heading">
+            {{- collection_title_t -}}
+          </h3>
+        {%- endunless -%}
       </div>{%- unless forloop.last -%}<span class="divider"></span>{%- endunless -%}
     {%- endfor -%}
 
@@ -410,6 +481,48 @@
       ],
       "default": "product",
       "info": "Product image chooses first available product image in collection"
+    },
+    {
+      "type": "header",
+      "content": "Overlay text"
+    },
+    {
+      "id": "overlay-text-enabled",
+      "label": "Enable overlay text",
+      "type": "checkbox",
+      "default": false,
+      "info": "Overlay text directly on images with custom positioning and styling"
+    },
+    {
+      "id": "overlay-text-position",
+      "label": "Vertical position",
+      "type": "select",
+      "options": [
+        { "label": "Upper", "value": "upper" },
+        { "label": "Middle", "value": "middle" },
+        { "label": "Lower", "value": "lower" }
+      ],
+      "default": "middle",
+      "visible_if": "{{ section.settings.overlay-text-enabled == true }}"
+    },
+    {
+      "id": "overlay-darkening",
+      "label": "Image darkening",
+      "type": "range",
+      "min": 0,
+      "max": 50,
+      "step": 5,
+      "unit": "%",
+      "default": 20,
+      "info": "Darkening effect applied to the image (0-50%)",
+      "visible_if": "{{ section.settings.overlay-text-enabled == true }}"
+    },
+    {
+      "id": "overlay-text-color",
+      "label": "Text color",
+      "type": "color",
+      "default": "#ffffff",
+      "visible_if": "{{ section.settings.overlay-text-enabled == true }}"
     },
     {
       "type": "header",
