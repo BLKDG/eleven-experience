@@ -123,17 +123,16 @@
     "footer-bar": {
       "type": "footer-bar",
       "blocks": {
+        "text_x8aR6C": {
+          "type": "text",
+          "settings": {
+            "text": "<p><a href=\"/policies/privacy-policy\" title=\"Privacy policy\">Privacy policy</a></p>"
+          }
+        },
         "text_GyY9ad": {
           "type": "text",
           "settings": {
-            "text": "©[current_year]  Irwin Backcountry Guides, LLC. All Rights Reserved. 330 Belleview Ave, Crested Butte, CO 81224"
-          }
-        },
-        "localization": {
-          "type": "localization",
-          "settings": {
-            "show-region-selector": true,
-            "show-locale-selector": true
+            "text": "<p>©[current_year]  Irwin Backcountry Guides, LLC. All Rights Reserved. 330 Belleview Ave, Crested Butte, CO 81224</p>"
           }
         },
         "social_icons_3dbGFh": {
@@ -142,8 +141,8 @@
         }
       },
       "block_order": [
+        "text_x8aR6C",
         "text_GyY9ad",
-        "localization",
         "social_icons_3dbGFh"
       ],
       "settings": {
