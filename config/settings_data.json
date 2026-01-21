@@ -49,6 +49,10 @@
     "quick-add--variant-style": "buttons",
     "search--show-products": true,
     "favicon": "shopify://shop_images/favicon.png",
+    "social--instagram--url": "https://www.instagram.com/elevenexperience/",
+    "social--facebook--url": "https://www.facebook.com/elevenexperience/",
+    "social--youtube--url": "https://www.youtube.com/channel/UC7GZ3PLnY0DH8Qq3eRXSn8A",
+    "social--x--url": "https://x.com/elevenexperienc",
     "preset": "Elements",
     "content_for_index": []
   },
