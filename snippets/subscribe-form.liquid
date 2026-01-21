@@ -43,10 +43,10 @@
     <button
       class="subscribe-form--submit"
       type="submit"
+      data-item="button-4"
       aria-label="{{ submit_t }}"
     >
-      {%- render 'nav-arrow', direction: 'right' -%}
-      {%- render 'icons', icon: 'spinner' -%}
+Subscribe
     </button>
 
     {%- if form.posted_successfully? -%}
