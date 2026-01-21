@@ -118,7 +118,7 @@
         "spacing-below": "none",
         "show-browse-button": true,
         "show-sort-button": true,
-        "show-refine-button": true,
+        "show-refine-button": false,
         "show-layout-buttons": true,
         "show-collections-list": true,
         "custom-list-collections": "",
