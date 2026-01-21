@@ -87,10 +87,10 @@
             {%- render 'social-icons', type: 'follow', mobile_alignment: 'center' -%}
 
           {%- when 'text' -%}
-            <p class="footer-bar--text" data-item="nav-text">
+            <div class="footer-bar--text" data-item="nav-text">
               {%- assign current_year = 'now' | date: '%Y' -%}
               {{- block.settings.text | replace: '[current_year]', current_year -}}
-            </p>
+            </div>
 
         {%- endcase -%}
       </div>
@@ -282,7 +282,7 @@
       "default": "medium"
     }
   ],
-  "max_blocks": 3,
+  "max_blocks": 10,
   "blocks": [
     {
       "type": "localization",
@@ -350,13 +350,12 @@
     {
       "type": "text",
       "name": "Text",
-      "limit": 1,
       "settings": [
         {
-          "type": "text",
+          "type": "richtext",
           "id": "text",
           "label": "Text",
-          "default": "[current_year] © Your brand name here.",
+          "default": "<p>[current_year] © Your brand name here.</p>",
           "info": "Inserting the text '[current_year]' will automatically insert the current year."
         }
       ]
