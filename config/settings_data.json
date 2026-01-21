@@ -18,6 +18,7 @@
     "color--body": "#000008",
     "color--alert": "#eb4b24",
     "typography--heading": "roboto_slab_n4",
+    "typography--heading--spacing": 0,
     "typography--heading--uppercase": false,
     "typography--banner--size": 48,
     "typography--featured--size": 48,
