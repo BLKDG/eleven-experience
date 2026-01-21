@@ -27,7 +27,7 @@
         "description_zYhf6B": {
           "type": "description",
           "settings": {
-            "description": "<p>By subscribing you are agreeing to our <a href=\"https://elevenexperience.com/policies/privacy-policy\" target=\"_blank\" title=\"Privacy Policy\">Privacy Policy</a>. You can unsubscribe from emails at any time.</p>",
+            "description": "<p>By subscribing you are agreeing to our <a href=\"https://elevenexperience.com/policies/privacy-policy\" target=\"_blank\" title=\"Privacy Policy\">Privacy Policy</a>.</p><p>You can unsubscribe from emails at any time.</p>",
             "mobile-hide-enabled": false
           }
         },
