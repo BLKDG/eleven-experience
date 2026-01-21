@@ -121,7 +121,7 @@
         "show-refine-button": false,
         "show-layout-buttons": true,
         "show-collections-list": true,
-        "custom-list-collections": "",
+        "custom-list-collections": "custom-browse-collection-list",
         "show-sort-list": true,
         "show-refine-list": true,
         "swatches": "circle",
