@@ -136,17 +136,15 @@
             "show-locale-selector": true
           }
         },
-        "payment-icons": {
-          "type": "payment-icons",
-          "settings": {
-            "greyscale-enabled": false
-          }
+        "social_icons_3dbGFh": {
+          "type": "social-icons",
+          "settings": {}
         }
       },
       "block_order": [
         "text_GyY9ad",
         "localization",
-        "payment-icons"
+        "social_icons_3dbGFh"
       ],
       "settings": {
         "border": "none",
