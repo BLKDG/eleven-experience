@@ -90,29 +90,31 @@
               data-transition-type="fade-in"
             >
               {%- for option in sort_options -%}
-                <li class="filter--link" data-type="sort">
-                  <input
-                    id="{{ option.name | handle | downcase }}-filter_sort"
-                    class="filter--input"
-                    type="radio"
-                    name="sort_by"
-                    value="{{ option.value }}"
-                    data-label="{{ option.name }}"
-                    tabindex="-1"
-                    {% if option.value == sort_by %}
-                      checked
-                    {% endif %}
-                  >
-                  <label
-                    class="filter--label"
-                    for="{{ option.name | handle | downcase }}-filter_sort"
-                    data-item="sub-nav-text"
-                    tabindex="0"
-                  >
-                    <span>{{- option.name -}}</span>
-                    {%- render 'icons', icon: 'cross' -%}
-                  </label>
-                </li>
+                {%- if option.value == 'manual' or option.value == 'best-selling' -%}
+                  <li class="filter--link" data-type="sort">
+                    <input
+                      id="{{ option.name | handle | downcase }}-filter_sort"
+                      class="filter--input"
+                      type="radio"
+                      name="sort_by"
+                      value="{{ option.value }}"
+                      data-label="{{ option.name }}"
+                      tabindex="-1"
+                      {% if option.value == sort_by %}
+                        checked
+                      {% endif %}
+                    >
+                    <label
+                      class="filter--label"
+                      for="{{ option.name | handle | downcase }}-filter_sort"
+                      data-item="sub-nav-text"
+                      tabindex="0"
+                    >
+                      <span>{{- option.name -}}</span>
+                      {%- render 'icons', icon: 'cross' -%}
+                    </label>
+                  </li>
+                {%- endif -%}
               {%- endfor -%}
             </ul>
           </div>
